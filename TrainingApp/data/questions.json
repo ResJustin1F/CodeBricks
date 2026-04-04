@@ -1,0 +1,3590 @@
+[
+  {
+    "questionText": "What is the index of the first element in an array?",
+    "options": [
+      "0",
+      "1",
+      "-1",
+      "Depends on language"
+    ],
+    "correctAnswer": "0",
+    "difficulty": "Easy",
+    "topic": "Arrays"
+  },
+  {
+    "questionText": "Which data structure uses contiguous memory?",
+    "options": [
+      "Array",
+      "Linked List",
+      "Stack",
+      "Queue"
+    ],
+    "correctAnswer": "Array",
+    "difficulty": "Easy",
+    "topic": "Arrays"
+  },
+  {
+    "questionText": "What is the last index of an array of size n?",
+    "options": [
+      "n",
+      "n-1",
+      "n+1",
+      "1"
+    ],
+    "correctAnswer": "n-1",
+    "difficulty": "Easy",
+    "topic": "Arrays"
+  },
+  {
+    "questionText": "Which operation is fastest in arrays?",
+    "options": [
+      "Access by index",
+      "Insertion at beginning",
+      "Deletion at middle",
+      "Searching unsorted"
+    ],
+    "correctAnswer": "Access by index",
+    "difficulty": "Easy",
+    "topic": "Arrays"
+  },
+  {
+    "questionText": "What is the time complexity of accessing an element in array?",
+    "options": [
+      "O(1)",
+      "O(n)",
+      "O(log n)",
+      "O(n^2)"
+    ],
+    "correctAnswer": "O(1)",
+    "difficulty": "Easy",
+    "topic": "Arrays"
+  },
+  {
+    "questionText": "Arrays are best for?",
+    "options": [
+      "Random access",
+      "Dynamic size",
+      "Frequent insertions",
+      "Frequent deletions"
+    ],
+    "correctAnswer": "Random access",
+    "difficulty": "Easy",
+    "topic": "Arrays"
+  },
+  {
+    "questionText": "What happens when array is full?",
+    "options": [
+      "Overflow",
+      "Underflow",
+      "Crash",
+      "Nothing"
+    ],
+    "correctAnswer": "Overflow",
+    "difficulty": "Easy",
+    "topic": "Arrays"
+  },
+  {
+    "questionText": "Which structure allows duplicate values?",
+    "options": [
+      "Array",
+      "Set",
+      "Map",
+      "Graph"
+    ],
+    "correctAnswer": "Array",
+    "difficulty": "Easy",
+    "topic": "Arrays"
+  },
+  {
+    "questionText": "Which operation shifts elements?",
+    "options": [
+      "Insertion",
+      "Access",
+      "Traversal",
+      "Search"
+    ],
+    "correctAnswer": "Insertion",
+    "difficulty": "Easy",
+    "topic": "Arrays"
+  },
+  {
+    "questionText": "What is traversal?",
+    "options": [
+      "Visiting elements",
+      "Deleting elements",
+      "Sorting",
+      "Reversing"
+    ],
+    "correctAnswer": "Visiting elements",
+    "difficulty": "Easy",
+    "topic": "Arrays"
+  },
+  {
+    "questionText": "What is a linked list?",
+    "options": [
+      "Collection of nodes",
+      "Array",
+      "Tree",
+      "Graph"
+    ],
+    "correctAnswer": "Collection of nodes",
+    "difficulty": "Easy",
+    "topic": "Linked Lists"
+  },
+  {
+    "questionText": "Each node contains?",
+    "options": [
+      "Data and pointer",
+      "Only data",
+      "Only pointer",
+      "Nothing"
+    ],
+    "correctAnswer": "Data and pointer",
+    "difficulty": "Easy",
+    "topic": "Linked Lists"
+  },
+  {
+    "questionText": "First node is called?",
+    "options": [
+      "Head",
+      "Tail",
+      "Root",
+      "Top"
+    ],
+    "correctAnswer": "Head",
+    "difficulty": "Easy",
+    "topic": "Linked Lists"
+  },
+  {
+    "questionText": "Last node points to?",
+    "options": [
+      "Null",
+      "Head",
+      "Next node",
+      "Random"
+    ],
+    "correctAnswer": "Null",
+    "difficulty": "Easy",
+    "topic": "Linked Lists"
+  },
+  {
+    "questionText": "Linked list is?",
+    "options": [
+      "Dynamic",
+      "Static",
+      "Fixed",
+      "Immutable"
+    ],
+    "correctAnswer": "Dynamic",
+    "difficulty": "Easy",
+    "topic": "Linked Lists"
+  },
+  {
+    "questionText": "Insertion at head is?",
+    "options": [
+      "Easy",
+      "Hard",
+      "Impossible",
+      "Slow"
+    ],
+    "correctAnswer": "Easy",
+    "difficulty": "Easy",
+    "topic": "Linked Lists"
+  },
+  {
+    "questionText": "Which pointer stores next node?",
+    "options": [
+      "Next",
+      "Prev",
+      "Head",
+      "Tail"
+    ],
+    "correctAnswer": "Next",
+    "difficulty": "Easy",
+    "topic": "Linked Lists"
+  },
+  {
+    "questionText": "What is tail?",
+    "options": [
+      "Last node",
+      "First node",
+      "Middle node",
+      "Null"
+    ],
+    "correctAnswer": "Last node",
+    "difficulty": "Easy",
+    "topic": "Linked Lists"
+  },
+  {
+    "questionText": "Linked list memory is?",
+    "options": [
+      "Non-contiguous",
+      "Contiguous",
+      "Fixed",
+      "Static"
+    ],
+    "correctAnswer": "Non-contiguous",
+    "difficulty": "Easy",
+    "topic": "Linked Lists"
+  },
+  {
+    "questionText": "Traversal starts from?",
+    "options": [
+      "Head",
+      "Tail",
+      "Middle",
+      "Random"
+    ],
+    "correctAnswer": "Head",
+    "difficulty": "Easy",
+    "topic": "Linked Lists"
+  },
+  {
+    "questionText": "Stack follows?",
+    "options": [
+      "LIFO",
+      "FIFO",
+      "Random",
+      "Priority"
+    ],
+    "correctAnswer": "LIFO",
+    "difficulty": "Easy",
+    "topic": "Stacks"
+  },
+  {
+    "questionText": "Top of stack is?",
+    "options": [
+      "Last element",
+      "First element",
+      "Middle",
+      "None of the above"
+    ],
+    "correctAnswer": "Last element",
+    "difficulty": "Easy",
+    "topic": "Stacks"
+  },
+  {
+    "questionText": "Push means?",
+    "options": [
+      "Insert",
+      "Delete",
+      "Search",
+      "Sort"
+    ],
+    "correctAnswer": "Insert",
+    "difficulty": "Easy",
+    "topic": "Stacks"
+  },
+  {
+    "questionText": "Pop means?",
+    "options": [
+      "Delete",
+      "Insert",
+      "Search",
+      "Traverse"
+    ],
+    "correctAnswer": "Delete",
+    "difficulty": "Easy",
+    "topic": "Stacks"
+  },
+  {
+    "questionText": "Peek means?",
+    "options": [
+      "View top",
+      "Delete top",
+      "Insert top",
+      "Reverse"
+    ],
+    "correctAnswer": "View top",
+    "difficulty": "Easy",
+    "topic": "Stacks"
+  },
+  {
+    "questionText": "Stack overflow occurs when?",
+    "options": [
+      "Full",
+      "Empty",
+      "Sorted",
+      "Null"
+    ],
+    "correctAnswer": "Full",
+    "difficulty": "Easy",
+    "topic": "Stacks"
+  },
+  {
+    "questionText": "Stack underflow occurs when?",
+    "options": [
+      "Empty",
+      "Full",
+      "Sorted",
+      "Null"
+    ],
+    "correctAnswer": "Empty",
+    "difficulty": "Easy",
+    "topic": "Stacks"
+  },
+  {
+    "questionText": "Which uses stack?",
+    "options": [
+      "Function calls",
+      "Sorting",
+      "Searching",
+      "Queues"
+    ],
+    "correctAnswer": "Function calls",
+    "difficulty": "Easy",
+    "topic": "Stacks"
+  },
+  {
+    "questionText": "Stack can be implemented using?",
+    "options": [
+      "Array",
+      "Linked List",
+      "Both",
+      "None of the above"
+    ],
+    "correctAnswer": "Both",
+    "difficulty": "Easy",
+    "topic": "Stacks"
+  },
+  {
+    "questionText": "Which operation removes top?",
+    "options": [
+      "Pop",
+      "Push",
+      "Peek",
+      "Insert"
+    ],
+    "correctAnswer": "Pop",
+    "difficulty": "Easy",
+    "topic": "Stacks"
+  },
+  {
+    "questionText": "Queue follows?",
+    "options": [
+      "FIFO",
+      "LIFO",
+      "Random",
+      "Priority"
+    ],
+    "correctAnswer": "FIFO",
+    "difficulty": "Easy",
+    "topic": "Queues"
+  },
+  {
+    "questionText": "Front of queue is?",
+    "options": [
+      "First element",
+      "Last element",
+      "Middle",
+      "None of the above"
+    ],
+    "correctAnswer": "First element",
+    "difficulty": "Easy",
+    "topic": "Queues"
+  },
+  {
+    "questionText": "Rear of queue is?",
+    "options": [
+      "Last element",
+      "First element",
+      "Middle",
+      "None of the above"
+    ],
+    "correctAnswer": "Last element",
+    "difficulty": "Easy",
+    "topic": "Queues"
+  },
+  {
+    "questionText": "Enqueue means?",
+    "options": [
+      "Insert",
+      "Delete",
+      "Search",
+      "Sort"
+    ],
+    "correctAnswer": "Insert",
+    "difficulty": "Easy",
+    "topic": "Queues"
+  },
+  {
+    "questionText": "Dequeue means?",
+    "options": [
+      "Delete",
+      "Insert",
+      "Search",
+      "Traverse"
+    ],
+    "correctAnswer": "Delete",
+    "difficulty": "Easy",
+    "topic": "Queues"
+  },
+  {
+    "questionText": "Queue overflow occurs when?",
+    "options": [
+      "Full",
+      "Empty",
+      "Sorted",
+      "Null"
+    ],
+    "correctAnswer": "Full",
+    "difficulty": "Easy",
+    "topic": "Queues"
+  },
+  {
+    "questionText": "Queue underflow occurs when?",
+    "options": [
+      "Empty",
+      "Full",
+      "Sorted",
+      "Null"
+    ],
+    "correctAnswer": "Empty",
+    "difficulty": "Easy",
+    "topic": "Queues"
+  },
+  {
+    "questionText": "Queue can be implemented using?",
+    "options": [
+      "Array",
+      "Linked List",
+      "Both",
+      "None of the above"
+    ],
+    "correctAnswer": "Both",
+    "difficulty": "Easy",
+    "topic": "Queues"
+  },
+  {
+    "questionText": "Circular queue helps avoid?",
+    "options": [
+      "Wasted space",
+      "Overflow",
+      "Sorting",
+      "Searching"
+    ],
+    "correctAnswer": "Wasted space",
+    "difficulty": "Easy",
+    "topic": "Queues"
+  },
+  {
+    "questionText": "Which operation removes front?",
+    "options": [
+      "Dequeue",
+      "Enqueue",
+      "Peek",
+      "Insert"
+    ],
+    "correctAnswer": "Dequeue",
+    "difficulty": "Easy",
+    "topic": "Queues"
+  },
+  {
+    "questionText": "Which array operation is O(n)?",
+    "options": [
+      "Insertion",
+      "Access",
+      "Update",
+      "Indexing"
+    ],
+    "correctAnswer": "Insertion",
+    "difficulty": "Easy",
+    "topic": "Arrays"
+  },
+  {
+    "questionText": "Arrays have fixed?",
+    "options": [
+      "Size",
+      "Speed",
+      "Values",
+      "Type"
+    ],
+    "correctAnswer": "Size",
+    "difficulty": "Easy",
+    "topic": "Arrays"
+  },
+  {
+    "questionText": "Which is fastest search in sorted array?",
+    "options": [
+      "Binary search",
+      "Linear search",
+      "BFS",
+      "DFS"
+    ],
+    "correctAnswer": "Binary search",
+    "difficulty": "Easy",
+    "topic": "Arrays"
+  },
+  {
+    "questionText": "Binary search needs?",
+    "options": [
+      "Sorted array",
+      "Unsorted array",
+      "Stack",
+      "Queue"
+    ],
+    "correctAnswer": "Sorted array",
+    "difficulty": "Easy",
+    "topic": "Arrays"
+  },
+  {
+    "questionText": "Which is slow in array?",
+    "options": [
+      "Insertion at start",
+      "Access",
+      "Update",
+      "Indexing"
+    ],
+    "correctAnswer": "Insertion at start",
+    "difficulty": "Easy",
+    "topic": "Arrays"
+  },
+  {
+    "questionText": "What is array traversal?",
+    "options": [
+      "Visit all elements",
+      "Delete all",
+      "Sort",
+      "Reverse"
+    ],
+    "correctAnswer": "Visit all elements",
+    "difficulty": "Easy",
+    "topic": "Arrays"
+  },
+  {
+    "questionText": "Arrays store elements of?",
+    "options": [
+      "Same type",
+      "Different types",
+      "Random",
+      "None of the above"
+    ],
+    "correctAnswer": "Same type",
+    "difficulty": "Easy",
+    "topic": "Arrays"
+  },
+  {
+    "questionText": "Which is linear structure?",
+    "options": [
+      "Array",
+      "Tree",
+      "Graph",
+      "Heap"
+    ],
+    "correctAnswer": "Array",
+    "difficulty": "Easy",
+    "topic": "Arrays"
+  },
+  {
+    "questionText": "Array index starts at?",
+    "options": [
+      "0",
+      "1",
+      "-1",
+      "Depends"
+    ],
+    "correctAnswer": "0",
+    "difficulty": "Easy",
+    "topic": "Arrays"
+  },
+  {
+    "questionText": "Array size is?",
+    "options": [
+      "Fixed",
+      "Dynamic",
+      "Infinite",
+      "None of the above"
+    ],
+    "correctAnswer": "Fixed",
+    "difficulty": "Easy",
+    "topic": "Arrays"
+  },
+  {
+    "questionText": "Which node points backward?",
+    "options": [
+      "Prev",
+      "Next",
+      "Head",
+      "Tail"
+    ],
+    "correctAnswer": "Prev",
+    "difficulty": "Easy",
+    "topic": "Linked Lists"
+  },
+  {
+    "questionText": "Doubly linked list has?",
+    "options": [
+      "Two pointers",
+      "One pointer",
+      "Three pointers",
+      "None of the above"
+    ],
+    "correctAnswer": "Two pointers",
+    "difficulty": "Easy",
+    "topic": "Linked Lists"
+  },
+  {
+    "questionText": "Singly linked list has?",
+    "options": [
+      "One pointer",
+      "Two pointers",
+      "No pointers",
+      "Three pointers"
+    ],
+    "correctAnswer": "One pointer",
+    "difficulty": "Easy",
+    "topic": "Linked Lists"
+  },
+  {
+    "questionText": "Circular linked list last node points to?",
+    "options": [
+      "Head",
+      "Null",
+      "Tail",
+      "Random"
+    ],
+    "correctAnswer": "Head",
+    "difficulty": "Easy",
+    "topic": "Linked Lists"
+  },
+  {
+    "questionText": "Linked list insertion is?",
+    "options": [
+      "Easy",
+      "Hard",
+      "Impossible",
+      "Slow"
+    ],
+    "correctAnswer": "Easy",
+    "difficulty": "Easy",
+    "topic": "Linked Lists"
+  },
+  {
+    "questionText": "Deletion in linked list requires?",
+    "options": [
+      "Pointer update",
+      "Sorting",
+      "Traversal",
+      "None of the above"
+    ],
+    "correctAnswer": "Pointer update",
+    "difficulty": "Easy",
+    "topic": "Linked Lists"
+  },
+  {
+    "questionText": "Linked list avoids?",
+    "options": [
+      "Overflow",
+      "Wasted space",
+      "Sorting",
+      "Searching"
+    ],
+    "correctAnswer": "Wasted space",
+    "difficulty": "Easy",
+    "topic": "Linked Lists"
+  },
+  {
+    "questionText": "Which is flexible?",
+    "options": [
+      "Linked list",
+      "Array",
+      "Stack",
+      "Queue"
+    ],
+    "correctAnswer": "Linked list",
+    "difficulty": "Easy",
+    "topic": "Linked Lists"
+  },
+  {
+    "questionText": "Memory allocation is?",
+    "options": [
+      "Dynamic",
+      "Static",
+      "Fixed",
+      "None of the above"
+    ],
+    "correctAnswer": "Dynamic",
+    "difficulty": "Easy",
+    "topic": "Linked Lists"
+  },
+  {
+    "questionText": "Linked list search is?",
+    "options": [
+      "Linear",
+      "Constant",
+      "Logarithmic",
+      "None of the above"
+    ],
+    "correctAnswer": "Linear",
+    "difficulty": "Easy",
+    "topic": "Linked Lists"
+  },
+  {
+    "questionText": "Stack uses which pointer?",
+    "options": [
+      "Top",
+      "Front",
+      "Rear",
+      "Head"
+    ],
+    "correctAnswer": "Top",
+    "difficulty": "Easy",
+    "topic": "Stacks"
+  },
+  {
+    "questionText": "Stack insertion point?",
+    "options": [
+      "Top",
+      "Bottom",
+      "Middle",
+      "None of the above"
+    ],
+    "correctAnswer": "Top",
+    "difficulty": "Easy",
+    "topic": "Stacks"
+  },
+  {
+    "questionText": "Stack deletion point?",
+    "options": [
+      "Top",
+      "Bottom",
+      "Middle",
+      "None of the above"
+    ],
+    "correctAnswer": "Top",
+    "difficulty": "Easy",
+    "topic": "Stacks"
+  },
+  {
+    "questionText": "Stack is useful in?",
+    "options": [
+      "Recursion",
+      "Sorting",
+      "Searching",
+      "Queues"
+    ],
+    "correctAnswer": "Recursion",
+    "difficulty": "Easy",
+    "topic": "Stacks"
+  },
+  {
+    "questionText": "Undo operation uses?",
+    "options": [
+      "Stack",
+      "Queue",
+      "Array",
+      "Tree"
+    ],
+    "correctAnswer": "Stack",
+    "difficulty": "Easy",
+    "topic": "Stacks"
+  },
+  {
+    "questionText": "Expression evaluation uses?",
+    "options": [
+      "Stack",
+      "Queue",
+      "Array",
+      "Tree"
+    ],
+    "correctAnswer": "Stack",
+    "difficulty": "Easy",
+    "topic": "Stacks"
+  },
+  {
+    "questionText": "Balanced parentheses use?",
+    "options": [
+      "Stack",
+      "Queue",
+      "Array",
+      "Tree"
+    ],
+    "correctAnswer": "Stack",
+    "difficulty": "Easy",
+    "topic": "Stacks"
+  },
+  {
+    "questionText": "Stack size increases by?",
+    "options": [
+      "Push",
+      "Pop",
+      "Peek",
+      "None of the above"
+    ],
+    "correctAnswer": "Push",
+    "difficulty": "Easy",
+    "topic": "Stacks"
+  },
+  {
+    "questionText": "Stack size decreases by?",
+    "options": [
+      "Pop",
+      "Push",
+      "Peek",
+      "None of the above"
+    ],
+    "correctAnswer": "Pop",
+    "difficulty": "Easy",
+    "topic": "Stacks"
+  },
+  {
+    "questionText": "Stack peek returns?",
+    "options": [
+      "Top element",
+      "Bottom",
+      "Middle",
+      "None of the above"
+    ],
+    "correctAnswer": "Top element",
+    "difficulty": "Easy",
+    "topic": "Stacks"
+  },
+  {
+    "questionText": "Queue insertion point?",
+    "options": [
+      "Rear",
+      "Front",
+      "Middle",
+      "None of the above"
+    ],
+    "correctAnswer": "Rear",
+    "difficulty": "Easy",
+    "topic": "Queues"
+  },
+  {
+    "questionText": "Queue deletion point?",
+    "options": [
+      "Front",
+      "Rear",
+      "Middle",
+      "None of the above"
+    ],
+    "correctAnswer": "Front",
+    "difficulty": "Easy",
+    "topic": "Queues"
+  },
+  {
+    "questionText": "Printer uses?",
+    "options": [
+      "Queue",
+      "Stack",
+      "Array",
+      "Tree"
+    ],
+    "correctAnswer": "Queue",
+    "difficulty": "Easy",
+    "topic": "Queues"
+  },
+  {
+    "questionText": "Scheduling uses?",
+    "options": [
+      "Queue",
+      "Stack",
+      "Array",
+      "Tree"
+    ],
+    "correctAnswer": "Queue",
+    "difficulty": "Easy",
+    "topic": "Queues"
+  },
+  {
+    "questionText": "Queue size increases by?",
+    "options": [
+      "Enqueue",
+      "Dequeue",
+      "Peek",
+      "None of the above"
+    ],
+    "correctAnswer": "Enqueue",
+    "difficulty": "Easy",
+    "topic": "Queues"
+  },
+  {
+    "questionText": "Queue size decreases by?",
+    "options": [
+      "Dequeue",
+      "Enqueue",
+      "Peek",
+      "None of the above"
+    ],
+    "correctAnswer": "Dequeue",
+    "difficulty": "Easy",
+    "topic": "Queues"
+  },
+  {
+    "questionText": "Queue peek returns?",
+    "options": [
+      "Front element",
+      "Rear",
+      "Middle",
+      "None of the above"
+    ],
+    "correctAnswer": "Front element",
+    "difficulty": "Easy",
+    "topic": "Queues"
+  },
+  {
+    "questionText": "Circular queue connects?",
+    "options": [
+      "End to start",
+      "Start to end",
+      "Middle to end",
+      "Random"
+    ],
+    "correctAnswer": "End to start",
+    "difficulty": "Easy",
+    "topic": "Queues"
+  },
+  {
+    "questionText": "Queue is linear?",
+    "options": [
+      "Yes",
+      "No",
+      "Maybe",
+      "None of the above"
+    ],
+    "correctAnswer": "Yes",
+    "difficulty": "Easy",
+    "topic": "Queues"
+  },
+  {
+    "questionText": "Queue supports FIFO?",
+    "options": [
+      "Yes",
+      "No",
+      "Maybe",
+      "None of the above"
+    ],
+    "correctAnswer": "Yes",
+    "difficulty": "Easy",
+    "topic": "Queues"
+  },
+  {
+    "questionText": "What is the default value of array elements in Java (int)?",
+    "options": [
+      "0",
+      "1",
+      "",
+      "-1"
+    ],
+    "correctAnswer": "0",
+    "difficulty": "Easy",
+    "topic": "Arrays"
+  },
+  {
+    "questionText": "Which loop is commonly used to traverse an array?",
+    "options": [
+      "for loop",
+      "while loop",
+      "do-while loop",
+      "All of the above"
+    ],
+    "correctAnswer": "All of the above",
+    "difficulty": "Easy",
+    "topic": "Arrays"
+  },
+  {
+    "questionText": "Which operation finds an element in array?",
+    "options": [
+      "Search",
+      "Insert",
+      "Delete",
+      "Traverse"
+    ],
+    "correctAnswer": "Search",
+    "difficulty": "Easy",
+    "topic": "Arrays"
+  },
+  {
+    "questionText": "What is updating in array?",
+    "options": [
+      "Changing value",
+      "Deleting value",
+      "Adding value",
+      "Sorting"
+    ],
+    "correctAnswer": "Changing value",
+    "difficulty": "Easy",
+    "topic": "Arrays"
+  },
+  {
+    "questionText": "Which data structure is best for fixed size data?",
+    "options": [
+      "Array",
+      "Linked List",
+      "Stack",
+      "Queue"
+    ],
+    "correctAnswer": "Array",
+    "difficulty": "Easy",
+    "topic": "Arrays"
+  },
+  {
+    "questionText": "Which linked list has no null pointers?",
+    "options": [
+      "Circular linked list",
+      "Singly linked list",
+      "Doubly linked list",
+      "None of the above"
+    ],
+    "correctAnswer": "Circular linked list",
+    "difficulty": "Easy",
+    "topic": "Linked Lists"
+  },
+  {
+    "questionText": "Which pointer connects nodes in singly linked list?",
+    "options": [
+      "Next",
+      "Prev",
+      "Head",
+      "Tail"
+    ],
+    "correctAnswer": "Next",
+    "difficulty": "Easy",
+    "topic": "Linked Lists"
+  },
+  {
+    "questionText": "What is required to access a linked list node?",
+    "options": [
+      "Traversal",
+      "Sorting",
+      "Searching",
+      "Indexing"
+    ],
+    "correctAnswer": "Traversal",
+    "difficulty": "Easy",
+    "topic": "Linked Lists"
+  },
+  {
+    "questionText": "Which linked list allows backward traversal?",
+    "options": [
+      "Doubly linked list",
+      "Singly linked list",
+      "Circular list",
+      "Array"
+    ],
+    "correctAnswer": "Doubly linked list",
+    "difficulty": "Easy",
+    "topic": "Linked Lists"
+  },
+  {
+    "questionText": "What is the time complexity of inserting at head?",
+    "options": [
+      "O(1)",
+      "O(n)",
+      "O(log n)",
+      "O(n^2)"
+    ],
+    "correctAnswer": "O(1)",
+    "difficulty": "Easy",
+    "topic": "Linked Lists"
+  },
+  {
+    "questionText": "What happens when popping from empty stack?",
+    "options": [
+      "Underflow",
+      "Overflow",
+      "Error",
+      "None of the above"
+    ],
+    "correctAnswer": "Underflow",
+    "difficulty": "Easy",
+    "topic": "Stacks"
+  },
+  {
+    "questionText": "Stack is also called?",
+    "options": [
+      "Last In First Out",
+      "First In First Out",
+      "Priority",
+      "Random"
+    ],
+    "correctAnswer": "Last In First Out",
+    "difficulty": "Easy",
+    "topic": "Stacks"
+  },
+  {
+    "questionText": "Which operation checks if stack is empty?",
+    "options": [
+      "isEmpty",
+      "peek",
+      "push",
+      "pop"
+    ],
+    "correctAnswer": "isEmpty",
+    "difficulty": "Easy",
+    "topic": "Stacks"
+  },
+  {
+    "questionText": "Stack can grow until?",
+    "options": [
+      "Memory full",
+      "Fixed size only",
+      "Sorted",
+      "None of the above"
+    ],
+    "correctAnswer": "Memory full",
+    "difficulty": "Easy",
+    "topic": "Stacks"
+  },
+  {
+    "questionText": "Which function adds element to stack?",
+    "options": [
+      "push",
+      "pop",
+      "peek",
+      "isEmpty"
+    ],
+    "correctAnswer": "push",
+    "difficulty": "Easy",
+    "topic": "Stacks"
+  },
+  {
+    "questionText": "Which function checks if queue is empty?",
+    "options": [
+      "isEmpty",
+      "enqueue",
+      "dequeue",
+      "peek"
+    ],
+    "correctAnswer": "isEmpty",
+    "difficulty": "Easy",
+    "topic": "Queues"
+  },
+  {
+    "questionText": "Queue can be used in?",
+    "options": [
+      "Breadth First Search",
+      "Depth First Search",
+      "Sorting",
+      "Recursion"
+    ],
+    "correctAnswer": "Breadth First Search",
+    "difficulty": "Easy",
+    "topic": "Queues"
+  },
+  {
+    "questionText": "Which type of queue removes elements randomly?",
+    "options": [
+      "Priority queue",
+      "Simple queue",
+      "Circular queue",
+      "None of the above"
+    ],
+    "correctAnswer": "Priority queue",
+    "difficulty": "Easy",
+    "topic": "Queues"
+  },
+  {
+    "questionText": "Which queue connects end to front?",
+    "options": [
+      "Circular queue",
+      "Simple queue",
+      "Priority queue",
+      "None of the above"
+    ],
+    "correctAnswer": "Circular queue",
+    "difficulty": "Easy",
+    "topic": "Queues"
+  },
+  {
+    "questionText": "Queue works on?",
+    "options": [
+      "First In First Out",
+      "Last In First Out",
+      "Random",
+      "Priority"
+    ],
+    "correctAnswer": "First In First Out",
+    "difficulty": "Easy",
+    "topic": "Queues"
+  },
+  {
+    "questionText": "Binary search tree property?",
+    "options": [
+      "Left < root < right",
+      "Left > root",
+      "Random",
+      "Equal"
+    ],
+    "correctAnswer": "Left < root < right",
+    "difficulty": "Medium",
+    "topic": "Trees"
+  },
+  {
+    "questionText": "Worst case search in skewed BST?",
+    "options": [
+      "O(log n)",
+      "O(n)",
+      "O(1)",
+      "O(n log n)"
+    ],
+    "correctAnswer": "O(n)",
+    "difficulty": "Medium",
+    "topic": "Trees"
+  },
+  {
+    "questionText": "Which traversal uses a queue?",
+    "options": [
+      "DFS",
+      "Inorder",
+      "Level order",
+      "Postorder"
+    ],
+    "correctAnswer": "Level order",
+    "difficulty": "Medium",
+    "topic": "Trees"
+  },
+  {
+    "questionText": "Full binary tree means?",
+    "options": [
+      "0 or 2 children",
+      "1 child",
+      "Only root",
+      "Balanced"
+    ],
+    "correctAnswer": "0 or 2 children",
+    "difficulty": "Medium",
+    "topic": "Trees"
+  },
+  {
+    "questionText": "Perfect binary tree means?",
+    "options": [
+      "All levels full",
+      "Random",
+      "Skewed",
+      "Only leaves"
+    ],
+    "correctAnswer": "All levels full",
+    "difficulty": "Medium",
+    "topic": "Trees"
+  },
+  {
+    "questionText": "Worst case lookup?",
+    "options": [
+      "O(1)",
+      "O(log n)",
+      "O(n)",
+      "O(n log n)"
+    ],
+    "correctAnswer": "O(n)",
+    "difficulty": "Medium",
+    "topic": "Hash Tables"
+  },
+  {
+    "questionText": "Linear probing does?",
+    "options": [
+      "Next slot search",
+      "Random jump",
+      "Sort",
+      "Tree insert"
+    ],
+    "correctAnswer": "Next slot search",
+    "difficulty": "Medium",
+    "topic": "Hash Tables"
+  },
+  {
+    "questionText": "Double hashing uses?",
+    "options": [
+      "2 functions",
+      "2 tables",
+      "Sort",
+      "Tree"
+    ],
+    "correctAnswer": "2 functions",
+    "difficulty": "Medium",
+    "topic": "Hash Tables"
+  },
+  {
+    "questionText": "Clustering caused by?",
+    "options": [
+      "Bad hash",
+      "Good hash",
+      "Sorting",
+      "Trees"
+    ],
+    "correctAnswer": "Bad hash",
+    "difficulty": "Medium",
+    "topic": "Hash Tables"
+  },
+  {
+    "questionText": "Rehashing happens when?",
+    "options": [
+      "Low load",
+      "High load",
+      "Empty",
+      "Sorted"
+    ],
+    "correctAnswer": "High load",
+    "difficulty": "Medium",
+    "topic": "Hash Tables"
+  },
+  {
+    "questionText": "Uniform hashing means?",
+    "options": [
+      "Even distribution",
+      "Same index",
+      "Sorted",
+      "Fast"
+    ],
+    "correctAnswer": "Even distribution",
+    "difficulty": "Medium",
+    "topic": "Hash Tables"
+  },
+  {
+    "questionText": "Merge sort space?",
+    "options": [
+      "O(n)",
+      "O(1)",
+      "O(log n)",
+      "O(n log n)"
+    ],
+    "correctAnswer": "O(n)",
+    "difficulty": "Medium",
+    "topic": "Sorting"
+  },
+  {
+    "questionText": "Heap sort uses?",
+    "options": [
+      "Heap",
+      "BST",
+      "Hash",
+      "Queue"
+    ],
+    "correctAnswer": "Heap",
+    "difficulty": "Medium",
+    "topic": "Sorting"
+  },
+  {
+    "questionText": "Stable sort preserves?",
+    "options": [
+      "Order",
+      "Speed",
+      "Memory",
+      "Tree"
+    ],
+    "correctAnswer": "Order",
+    "difficulty": "Medium",
+    "topic": "Sorting"
+  },
+  {
+    "questionText": "Array insertion worst case?",
+    "options": [
+      "O(n)",
+      "O(1)",
+      "O(log n)",
+      "O(n^2)"
+    ],
+    "correctAnswer": "O(n)",
+    "difficulty": "Medium",
+    "topic": "Arrays"
+  },
+  {
+    "questionText": "Binary search time complexity?",
+    "options": [
+      "O(log n)",
+      "O(n)",
+      "O(1)",
+      "O(n^2)"
+    ],
+    "correctAnswer": "O(log n)",
+    "difficulty": "Medium",
+    "topic": "Arrays"
+  },
+  {
+    "questionText": "Linear search worst case?",
+    "options": [
+      "O(n)",
+      "O(log n)",
+      "O(1)",
+      "O(n^2)"
+    ],
+    "correctAnswer": "O(n)",
+    "difficulty": "Medium",
+    "topic": "Arrays"
+  },
+  {
+    "questionText": "Array deletion worst case?",
+    "options": [
+      "O(n)",
+      "O(1)",
+      "O(log n)",
+      "O(n^2)"
+    ],
+    "correctAnswer": "O(n)",
+    "difficulty": "Medium",
+    "topic": "Arrays"
+  },
+  {
+    "questionText": "Two pointer technique used for?",
+    "options": [
+      "Pair problems",
+      "Sorting",
+      "Hashing",
+      "Recursion"
+    ],
+    "correctAnswer": "Pair problems",
+    "difficulty": "Medium",
+    "topic": "Arrays"
+  },
+  {
+    "questionText": "Sliding window used for?",
+    "options": [
+      "Subarray problems",
+      "Sorting",
+      "Searching",
+      "Hashing"
+    ],
+    "correctAnswer": "Subarray problems",
+    "difficulty": "Medium",
+    "topic": "Arrays"
+  },
+  {
+    "questionText": "Prefix sum helps with?",
+    "options": [
+      "Range queries",
+      "Sorting",
+      "Searching",
+      "Hashing"
+    ],
+    "correctAnswer": "Range queries",
+    "difficulty": "Medium",
+    "topic": "Arrays"
+  },
+  {
+    "questionText": "Dynamic array resize factor?",
+    "options": [
+      "2x",
+      "3x",
+      "1.5x",
+      "4x"
+    ],
+    "correctAnswer": "2x",
+    "difficulty": "Medium",
+    "topic": "Arrays"
+  },
+  {
+    "questionText": "Kadane's algorithm solves?",
+    "options": [
+      "Max subarray",
+      "Min subarray",
+      "Sorting",
+      "Searching"
+    ],
+    "correctAnswer": "Max subarray",
+    "difficulty": "Medium",
+    "topic": "Arrays"
+  },
+  {
+    "questionText": "Array rotation time complexity?",
+    "options": [
+      "O(n)",
+      "O(1)",
+      "O(log n)",
+      "O(n^2)"
+    ],
+    "correctAnswer": "O(n)",
+    "difficulty": "Medium",
+    "topic": "Arrays"
+  },
+  {
+    "questionText": "Dutch national flag problem sorts?",
+    "options": [
+      "3 values",
+      "2 values",
+      "4 values",
+      "All values"
+    ],
+    "correctAnswer": "3 values",
+    "difficulty": "Medium",
+    "topic": "Arrays"
+  },
+  {
+    "questionText": "Merge two sorted arrays complexity?",
+    "options": [
+      "O(n+m)",
+      "O(n)",
+      "O(n^2)",
+      "O(log n)"
+    ],
+    "correctAnswer": "O(n+m)",
+    "difficulty": "Medium",
+    "topic": "Arrays"
+  },
+  {
+    "questionText": "Matrix traversal complexity?",
+    "options": [
+      "O(n*m)",
+      "O(n)",
+      "O(n^2)",
+      "O(log n)"
+    ],
+    "correctAnswer": "O(n*m)",
+    "difficulty": "Medium",
+    "topic": "Arrays"
+  },
+  {
+    "questionText": "Reverse linked list complexity?",
+    "options": [
+      "O(n)",
+      "O(1)",
+      "O(log n)",
+      "O(n^2)"
+    ],
+    "correctAnswer": "O(n)",
+    "difficulty": "Medium",
+    "topic": "Linked Lists"
+  },
+  {
+    "questionText": "Find middle node technique?",
+    "options": [
+      "Two pointers",
+      "Recursion",
+      "Stack",
+      "Queue"
+    ],
+    "correctAnswer": "Two pointers",
+    "difficulty": "Medium",
+    "topic": "Linked Lists"
+  },
+  {
+    "questionText": "Detect cycle algorithm?",
+    "options": [
+      "Floyd's",
+      "Dijkstra's",
+      "Kruskal's",
+      "BFS"
+    ],
+    "correctAnswer": "Floyd's",
+    "difficulty": "Medium",
+    "topic": "Linked Lists"
+  },
+  {
+    "questionText": "Merge two sorted lists complexity?",
+    "options": [
+      "O(n+m)",
+      "O(n^2)",
+      "O(log n)",
+      "O(1)"
+    ],
+    "correctAnswer": "O(n+m)",
+    "difficulty": "Medium",
+    "topic": "Linked Lists"
+  },
+  {
+    "questionText": "Delete nth from end technique?",
+    "options": [
+      "Two pointers",
+      "Recursion",
+      "Stack",
+      "Queue"
+    ],
+    "correctAnswer": "Two pointers",
+    "difficulty": "Medium",
+    "topic": "Linked Lists"
+  },
+  {
+    "questionText": "Doubly linked list deletion?",
+    "options": [
+      "O(1)",
+      "O(n)",
+      "O(log n)",
+      "O(n^2)"
+    ],
+    "correctAnswer": "O(1)",
+    "difficulty": "Medium",
+    "topic": "Linked Lists"
+  },
+  {
+    "questionText": "Linked list palindrome check uses?",
+    "options": [
+      "Stack",
+      "Queue",
+      "Array",
+      "Heap"
+    ],
+    "correctAnswer": "Stack",
+    "difficulty": "Medium",
+    "topic": "Linked Lists"
+  },
+  {
+    "questionText": "Intersection of two lists found by?",
+    "options": [
+      "Length difference",
+      "Sorting",
+      "Hashing only",
+      "BFS"
+    ],
+    "correctAnswer": "Length difference",
+    "difficulty": "Medium",
+    "topic": "Linked Lists"
+  },
+  {
+    "questionText": "Recursive reverse space complexity?",
+    "options": [
+      "O(n)",
+      "O(1)",
+      "O(log n)",
+      "O(n^2)"
+    ],
+    "correctAnswer": "O(n)",
+    "difficulty": "Medium",
+    "topic": "Linked Lists"
+  },
+  {
+    "questionText": "Skip list search complexity?",
+    "options": [
+      "O(log n)",
+      "O(n)",
+      "O(1)",
+      "O(n^2)"
+    ],
+    "correctAnswer": "O(log n)",
+    "difficulty": "Medium",
+    "topic": "Linked Lists"
+  },
+  {
+    "questionText": "Flatten multilevel list uses?",
+    "options": [
+      "Stack",
+      "Queue",
+      "Heap",
+      "Array"
+    ],
+    "correctAnswer": "Stack",
+    "difficulty": "Medium",
+    "topic": "Linked Lists"
+  },
+  {
+    "questionText": "LRU cache uses which list?",
+    "options": [
+      "Doubly linked",
+      "Singly linked",
+      "Circular",
+      "Array"
+    ],
+    "correctAnswer": "Doubly linked",
+    "difficulty": "Medium",
+    "topic": "Linked Lists"
+  },
+  {
+    "questionText": "Sort linked list best algorithm?",
+    "options": [
+      "Merge sort",
+      "Quick sort",
+      "Bubble sort",
+      "Heap sort"
+    ],
+    "correctAnswer": "Merge sort",
+    "difficulty": "Medium",
+    "topic": "Linked Lists"
+  },
+  {
+    "questionText": "Min stack retrieval complexity?",
+    "options": [
+      "O(1)",
+      "O(n)",
+      "O(log n)",
+      "O(n^2)"
+    ],
+    "correctAnswer": "O(1)",
+    "difficulty": "Medium",
+    "topic": "Stacks"
+  },
+  {
+    "questionText": "Infix to postfix uses?",
+    "options": [
+      "Stack",
+      "Queue",
+      "Array",
+      "Tree"
+    ],
+    "correctAnswer": "Stack",
+    "difficulty": "Medium",
+    "topic": "Stacks"
+  },
+  {
+    "questionText": "Postfix evaluation complexity?",
+    "options": [
+      "O(n)",
+      "O(1)",
+      "O(log n)",
+      "O(n^2)"
+    ],
+    "correctAnswer": "O(n)",
+    "difficulty": "Medium",
+    "topic": "Stacks"
+  },
+  {
+    "questionText": "Next greater element complexity?",
+    "options": [
+      "O(n)",
+      "O(n^2)",
+      "O(log n)",
+      "O(1)"
+    ],
+    "correctAnswer": "O(n)",
+    "difficulty": "Medium",
+    "topic": "Stacks"
+  },
+  {
+    "questionText": "Largest rectangle histogram uses?",
+    "options": [
+      "Stack",
+      "Queue",
+      "Heap",
+      "Array"
+    ],
+    "correctAnswer": "Stack",
+    "difficulty": "Medium",
+    "topic": "Stacks"
+  },
+  {
+    "questionText": "DFS uses which structure?",
+    "options": [
+      "Stack",
+      "Queue",
+      "Heap",
+      "Array"
+    ],
+    "correctAnswer": "Stack",
+    "difficulty": "Medium",
+    "topic": "Stacks"
+  },
+  {
+    "questionText": "Iterative DFS space complexity?",
+    "options": [
+      "O(h)",
+      "O(n)",
+      "O(1)",
+      "O(log n)"
+    ],
+    "correctAnswer": "O(h)",
+    "difficulty": "Medium",
+    "topic": "Stacks"
+  },
+  {
+    "questionText": "Monotonic stack used for?",
+    "options": [
+      "Next greater",
+      "Sorting",
+      "Searching",
+      "Hashing"
+    ],
+    "correctAnswer": "Next greater",
+    "difficulty": "Medium",
+    "topic": "Stacks"
+  },
+  {
+    "questionText": "Stack sort uses how many stacks?",
+    "options": [
+      "2",
+      "1",
+      "3",
+      "4"
+    ],
+    "correctAnswer": "2",
+    "difficulty": "Medium",
+    "topic": "Stacks"
+  },
+  {
+    "questionText": "Towers of Hanoi complexity?",
+    "options": [
+      "O(2^n)",
+      "O(n)",
+      "O(n^2)",
+      "O(log n)"
+    ],
+    "correctAnswer": "O(2^n)",
+    "difficulty": "Medium",
+    "topic": "Stacks"
+  },
+  {
+    "questionText": "Valid parentheses uses?",
+    "options": [
+      "Stack",
+      "Queue",
+      "Array",
+      "Tree"
+    ],
+    "correctAnswer": "Stack",
+    "difficulty": "Medium",
+    "topic": "Stacks"
+  },
+  {
+    "questionText": "Celebrity problem complexity?",
+    "options": [
+      "O(n)",
+      "O(n^2)",
+      "O(log n)",
+      "O(1)"
+    ],
+    "correctAnswer": "O(n)",
+    "difficulty": "Medium",
+    "topic": "Stacks"
+  },
+  {
+    "questionText": "Decode string problem uses?",
+    "options": [
+      "Stack",
+      "Queue",
+      "Heap",
+      "Graph"
+    ],
+    "correctAnswer": "Stack",
+    "difficulty": "Medium",
+    "topic": "Stacks"
+  },
+  {
+    "questionText": "BFS time complexity?",
+    "options": [
+      "O(V+E)",
+      "O(V)",
+      "O(E)",
+      "O(V^2)"
+    ],
+    "correctAnswer": "O(V+E)",
+    "difficulty": "Medium",
+    "topic": "Queues"
+  },
+  {
+    "questionText": "Sliding window maximum uses?",
+    "options": [
+      "Deque",
+      "Stack",
+      "Array",
+      "Heap"
+    ],
+    "correctAnswer": "Deque",
+    "difficulty": "Medium",
+    "topic": "Queues"
+  },
+  {
+    "questionText": "Queue using two stacks complexity?",
+    "options": [
+      "O(1) amortized",
+      "O(n)",
+      "O(log n)",
+      "O(n^2)"
+    ],
+    "correctAnswer": "O(1) amortized",
+    "difficulty": "Medium",
+    "topic": "Queues"
+  },
+  {
+    "questionText": "Priority queue operations?",
+    "options": [
+      "O(log n)",
+      "O(1)",
+      "O(n)",
+      "O(n^2)"
+    ],
+    "correctAnswer": "O(log n)",
+    "difficulty": "Medium",
+    "topic": "Queues"
+  },
+  {
+    "questionText": "Level order traversal uses?",
+    "options": [
+      "Queue",
+      "Stack",
+      "Array",
+      "Heap"
+    ],
+    "correctAnswer": "Queue",
+    "difficulty": "Medium",
+    "topic": "Queues"
+  },
+  {
+    "questionText": "Circular queue advantage?",
+    "options": [
+      "No wasted space",
+      "Faster search",
+      "Less memory",
+      "Sorted"
+    ],
+    "correctAnswer": "No wasted space",
+    "difficulty": "Medium",
+    "topic": "Queues"
+  },
+  {
+    "questionText": "Deque stands for?",
+    "options": [
+      "Double ended queue",
+      "Dynamic queue",
+      "Double queue",
+      "Directed queue"
+    ],
+    "correctAnswer": "Double ended queue",
+    "difficulty": "Medium",
+    "topic": "Queues"
+  },
+  {
+    "questionText": "Task scheduling uses?",
+    "options": [
+      "Queue",
+      "Stack",
+      "Tree",
+      "Graph"
+    ],
+    "correctAnswer": "Queue",
+    "difficulty": "Medium",
+    "topic": "Queues"
+  },
+  {
+    "questionText": "First non-repeating character uses?",
+    "options": [
+      "Queue",
+      "Stack",
+      "Heap",
+      "Array"
+    ],
+    "correctAnswer": "Queue",
+    "difficulty": "Medium",
+    "topic": "Queues"
+  },
+  {
+    "questionText": "Snake and ladder BFS uses?",
+    "options": [
+      "Queue",
+      "Stack",
+      "Tree",
+      "Heap"
+    ],
+    "correctAnswer": "Queue",
+    "difficulty": "Medium",
+    "topic": "Queues"
+  },
+  {
+    "questionText": "Rotten oranges problem uses?",
+    "options": [
+      "Queue",
+      "Stack",
+      "Heap",
+      "Array"
+    ],
+    "correctAnswer": "Queue",
+    "difficulty": "Medium",
+    "topic": "Queues"
+  },
+  {
+    "questionText": "Generate binary numbers uses?",
+    "options": [
+      "Queue",
+      "Stack",
+      "Tree",
+      "Heap"
+    ],
+    "correctAnswer": "Queue",
+    "difficulty": "Medium",
+    "topic": "Queues"
+  },
+  {
+    "questionText": "Interleave queue halves uses?",
+    "options": [
+      "Stack",
+      "Queue",
+      "Array",
+      "Heap"
+    ],
+    "correctAnswer": "Stack",
+    "difficulty": "Medium",
+    "topic": "Queues"
+  },
+  {
+    "questionText": "BST insertion average?",
+    "options": [
+      "O(log n)",
+      "O(n)",
+      "O(1)",
+      "O(n^2)"
+    ],
+    "correctAnswer": "O(log n)",
+    "difficulty": "Medium",
+    "topic": "Trees"
+  },
+  {
+    "questionText": "Level order traversal complexity?",
+    "options": [
+      "O(n)",
+      "O(log n)",
+      "O(1)",
+      "O(n^2)"
+    ],
+    "correctAnswer": "O(n)",
+    "difficulty": "Medium",
+    "topic": "Trees"
+  },
+  {
+    "questionText": "Mirror tree check complexity?",
+    "options": [
+      "O(n)",
+      "O(log n)",
+      "O(1)",
+      "O(n^2)"
+    ],
+    "correctAnswer": "O(n)",
+    "difficulty": "Medium",
+    "topic": "Trees"
+  },
+  {
+    "questionText": "Count leaf nodes complexity?",
+    "options": [
+      "O(n)",
+      "O(log n)",
+      "O(1)",
+      "O(n^2)"
+    ],
+    "correctAnswer": "O(n)",
+    "difficulty": "Medium",
+    "topic": "Trees"
+  },
+  {
+    "questionText": "Separate chaining worst case?",
+    "options": [
+      "O(n)",
+      "O(1)",
+      "O(log n)",
+      "O(n^2)"
+    ],
+    "correctAnswer": "O(n)",
+    "difficulty": "Medium",
+    "topic": "Hash Tables"
+  },
+  {
+    "questionText": "Two sum problem uses?",
+    "options": [
+      "Hash table",
+      "Sorting",
+      "Stack",
+      "Queue"
+    ],
+    "correctAnswer": "Hash table",
+    "difficulty": "Medium",
+    "topic": "Hash Tables"
+  },
+  {
+    "questionText": "Group anagrams uses?",
+    "options": [
+      "Hash table",
+      "Sorting only",
+      "Stack",
+      "Queue"
+    ],
+    "correctAnswer": "Hash table",
+    "difficulty": "Medium",
+    "topic": "Hash Tables"
+  },
+  {
+    "questionText": "Count distinct elements uses?",
+    "options": [
+      "Hash table",
+      "Sorting",
+      "Stack",
+      "Tree"
+    ],
+    "correctAnswer": "Hash table",
+    "difficulty": "Medium",
+    "topic": "Hash Tables"
+  },
+  {
+    "questionText": "Merge sort space complexity?",
+    "options": [
+      "O(n)",
+      "O(1)",
+      "O(log n)",
+      "O(n^2)"
+    ],
+    "correctAnswer": "O(n)",
+    "difficulty": "Medium",
+    "topic": "Sorting"
+  },
+  {
+    "questionText": "Quick sort pivot strategy?",
+    "options": [
+      "Median of three",
+      "First element",
+      "Last element",
+      "Random"
+    ],
+    "correctAnswer": "Median of three",
+    "difficulty": "Medium",
+    "topic": "Sorting"
+  },
+  {
+    "questionText": "Counting sort time complexity?",
+    "options": [
+      "O(n+k)",
+      "O(n)",
+      "O(n^2)",
+      "O(log n)"
+    ],
+    "correctAnswer": "O(n+k)",
+    "difficulty": "Medium",
+    "topic": "Sorting"
+  },
+  {
+    "questionText": "Radix sort complexity?",
+    "options": [
+      "O(nk)",
+      "O(n)",
+      "O(n^2)",
+      "O(log n)"
+    ],
+    "correctAnswer": "O(nk)",
+    "difficulty": "Medium",
+    "topic": "Sorting"
+  },
+  {
+    "questionText": "Shell sort improvement over?",
+    "options": [
+      "Insertion sort",
+      "Merge sort",
+      "Quick sort",
+      "Heap sort"
+    ],
+    "correctAnswer": "Insertion sort",
+    "difficulty": "Medium",
+    "topic": "Sorting"
+  },
+  {
+    "questionText": "Bucket sort best for?",
+    "options": [
+      "Uniform data",
+      "Random data",
+      "Sorted data",
+      "Large data"
+    ],
+    "correctAnswer": "Uniform data",
+    "difficulty": "Medium",
+    "topic": "Sorting"
+  },
+  {
+    "questionText": "Tim sort used in?",
+    "options": [
+      "Python",
+      "Java only",
+      "C++",
+      "JavaScript"
+    ],
+    "correctAnswer": "Python",
+    "difficulty": "Medium",
+    "topic": "Sorting"
+  },
+  {
+    "questionText": "Introsort combines?",
+    "options": [
+      "Quick+Heap+Insertion",
+      "Merge+Heap",
+      "Quick+Merge",
+      "Bubble+Insertion"
+    ],
+    "correctAnswer": "Quick+Heap+Insertion",
+    "difficulty": "Medium",
+    "topic": "Sorting"
+  },
+  {
+    "questionText": "Hash table vs array lookup?",
+    "options": [
+      "O(1) vs O(1)",
+      "O(n) vs O(1)",
+      "O(1) vs O(n)",
+      "O(n) vs O(n)"
+    ],
+    "correctAnswer": "O(1) vs O(1)",
+    "difficulty": "Medium",
+    "topic": "Hash Tables"
+  },
+  {
+    "questionText": "Frequency count uses?",
+    "options": [
+      "Hash table",
+      "Stack",
+      "Queue",
+      "Tree"
+    ],
+    "correctAnswer": "Hash table",
+    "difficulty": "Medium",
+    "topic": "Hash Tables"
+  },
+  {
+    "questionText": "Subarray sum equals k uses?",
+    "options": [
+      "Hash table",
+      "Stack",
+      "Sorting",
+      "Tree"
+    ],
+    "correctAnswer": "Hash table",
+    "difficulty": "Medium",
+    "topic": "Hash Tables"
+  },
+  {
+    "questionText": "AVL tree rotation types?",
+    "options": [
+      "4",
+      "2",
+      "3",
+      "1"
+    ],
+    "correctAnswer": "4",
+    "difficulty": "Medium",
+    "topic": "Trees"
+  },
+  {
+    "questionText": "Red black tree property?",
+    "options": [
+      "Balanced",
+      "Sorted",
+      "Complete",
+      "Full"
+    ],
+    "correctAnswer": "Balanced",
+    "difficulty": "Medium",
+    "topic": "Trees"
+  },
+  {
+    "questionText": "Tree diameter complexity?",
+    "options": [
+      "O(n)",
+      "O(log n)",
+      "O(1)",
+      "O(n^2)"
+    ],
+    "correctAnswer": "O(n)",
+    "difficulty": "Medium",
+    "topic": "Trees"
+  },
+  {
+    "questionText": "LCA of two nodes complexity?",
+    "options": [
+      "O(n)",
+      "O(log n)",
+      "O(1)",
+      "O(n^2)"
+    ],
+    "correctAnswer": "O(n)",
+    "difficulty": "Medium",
+    "topic": "Trees"
+  },
+  {
+    "questionText": "Bubble sort adaptive?",
+    "options": [
+      "Yes",
+      "No",
+      "Sometimes",
+      "Never"
+    ],
+    "correctAnswer": "Yes",
+    "difficulty": "Medium",
+    "topic": "Sorting"
+  },
+  {
+    "questionText": "External sorting uses?",
+    "options": [
+      "Merge sort",
+      "Quick sort",
+      "Heap sort",
+      "Bubble sort"
+    ],
+    "correctAnswer": "Merge sort",
+    "difficulty": "Medium",
+    "topic": "Sorting"
+  },
+  {
+    "questionText": "Quick sort in-place?",
+    "options": [
+      "Yes",
+      "No",
+      "Sometimes",
+      "Depends"
+    ],
+    "correctAnswer": "Yes",
+    "difficulty": "Medium",
+    "topic": "Sorting"
+  },
+  {
+    "questionText": "Array subarray count?",
+    "options": [
+      "n*(n+1)/2",
+      "n^2",
+      "n*(n-1)",
+      "2^n"
+    ],
+    "correctAnswer": "n*(n+1)/2",
+    "difficulty": "Medium",
+    "topic": "Arrays"
+  },
+  {
+    "questionText": "Sparse array best stored as?",
+    "options": [
+      "Hash table",
+      "Array",
+      "Stack",
+      "Queue"
+    ],
+    "correctAnswer": "Hash table",
+    "difficulty": "Medium",
+    "topic": "Arrays"
+  },
+  {
+    "questionText": "Find peak element complexity?",
+    "options": [
+      "O(log n)",
+      "O(n)",
+      "O(1)",
+      "O(n^2)"
+    ],
+    "correctAnswer": "O(log n)",
+    "difficulty": "Medium",
+    "topic": "Arrays"
+  },
+  {
+    "questionText": "Linked list sort complexity?",
+    "options": [
+      "O(n log n)",
+      "O(n^2)",
+      "O(n)",
+      "O(log n)"
+    ],
+    "correctAnswer": "O(n log n)",
+    "difficulty": "Medium",
+    "topic": "Linked Lists"
+  },
+  {
+    "questionText": "XOR linked list saves?",
+    "options": [
+      "Memory",
+      "Time",
+      "Space only",
+      "Speed"
+    ],
+    "correctAnswer": "Memory",
+    "difficulty": "Medium",
+    "topic": "Linked Lists"
+  },
+  {
+    "questionText": "Stack with getMin complexity?",
+    "options": [
+      "O(1)",
+      "O(n)",
+      "O(log n)",
+      "O(n^2)"
+    ],
+    "correctAnswer": "O(1)",
+    "difficulty": "Medium",
+    "topic": "Stacks"
+  },
+  {
+    "questionText": "Queue reversal uses?",
+    "options": [
+      "Stack",
+      "Queue",
+      "Array",
+      "Heap"
+    ],
+    "correctAnswer": "Stack",
+    "difficulty": "Medium",
+    "topic": "Queues"
+  },
+  {
+    "questionText": "What is the worst-case time complexity of searching in an unsorted array?",
+    "options": [
+      "O(n)",
+      "O(log n)",
+      "O(1)",
+      "O(n log n)"
+    ],
+    "correctAnswer": "O(n)",
+    "difficulty": "Hard",
+    "topic": "Arrays"
+  },
+  {
+    "questionText": "What is the space complexity of an in-place array algorithm?",
+    "options": [
+      "O(1)",
+      "O(n)",
+      "O(log n)",
+      "O(n^2)"
+    ],
+    "correctAnswer": "O(1)",
+    "difficulty": "Hard",
+    "topic": "Arrays"
+  },
+  {
+    "questionText": "What is the worst-case time for inserting at beginning of array?",
+    "options": [
+      "O(n)",
+      "O(1)",
+      "O(log n)",
+      "O(n log n)"
+    ],
+    "correctAnswer": "O(n)",
+    "difficulty": "Hard",
+    "topic": "Arrays"
+  },
+  {
+    "questionText": "Which algorithm is best for finding max subarray sum?",
+    "options": [
+      "Kadane\u2019s algorithm",
+      "Merge sort",
+      "DFS",
+      "BFS"
+    ],
+    "correctAnswer": "Kadane\u2019s algorithm",
+    "difficulty": "Hard",
+    "topic": "Arrays"
+  },
+  {
+    "questionText": "What is the time complexity of merging two sorted arrays?",
+    "options": [
+      "O(n+m)",
+      "O(n^2)",
+      "O(log n)",
+      "O(1)"
+    ],
+    "correctAnswer": "O(n+m)",
+    "difficulty": "Hard",
+    "topic": "Arrays"
+  },
+  {
+    "questionText": "What happens if array index exceeds bounds?",
+    "options": [
+      "Runtime error",
+      "Compile error",
+      "Ignored",
+      "Auto resize"
+    ],
+    "correctAnswer": "Runtime error",
+    "difficulty": "Hard",
+    "topic": "Arrays"
+  },
+  {
+    "questionText": "Which technique reduces time using extra space?",
+    "options": [
+      "Hashing",
+      "Recursion",
+      "Sorting",
+      "Traversal"
+    ],
+    "correctAnswer": "Hashing",
+    "difficulty": "Hard",
+    "topic": "Arrays"
+  },
+  {
+    "questionText": "What is amortized time for dynamic array append?",
+    "options": [
+      "O(1)",
+      "O(n)",
+      "O(log n)",
+      "O(n log n)"
+    ],
+    "correctAnswer": "O(1)",
+    "difficulty": "Hard",
+    "topic": "Arrays"
+  },
+  {
+    "questionText": "Which search works on rotated sorted array?",
+    "options": [
+      "Modified binary search",
+      "Linear search",
+      "DFS",
+      "BFS"
+    ],
+    "correctAnswer": "Modified binary search",
+    "difficulty": "Hard",
+    "topic": "Arrays"
+  },
+  {
+    "questionText": "What is time complexity of 2D array traversal?",
+    "options": [
+      "O(n*m)",
+      "O(n)",
+      "O(log n)",
+      "O(1)"
+    ],
+    "correctAnswer": "O(n*m)",
+    "difficulty": "Hard",
+    "topic": "Arrays"
+  },
+  {
+    "questionText": "What is time complexity to detect cycle in linked list?",
+    "options": [
+      "O(n)",
+      "O(log n)",
+      "O(1)",
+      "O(n^2)"
+    ],
+    "correctAnswer": "O(n)",
+    "difficulty": "Hard",
+    "topic": "Linked Lists"
+  },
+  {
+    "questionText": "Which algorithm detects cycle?",
+    "options": [
+      "Floyd\u2019s cycle detection",
+      "BFS",
+      "DFS",
+      "Merge sort"
+    ],
+    "correctAnswer": "Floyd\u2019s cycle detection",
+    "difficulty": "Hard",
+    "topic": "Linked Lists"
+  },
+  {
+    "questionText": "Reversing linked list time complexity?",
+    "options": [
+      "O(n)",
+      "O(log n)",
+      "O(1)",
+      "O(n^2)"
+    ],
+    "correctAnswer": "O(n)",
+    "difficulty": "Hard",
+    "topic": "Linked Lists"
+  },
+  {
+    "questionText": "Finding middle node uses?",
+    "options": [
+      "Two pointers",
+      "Recursion",
+      "Sorting",
+      "Stack"
+    ],
+    "correctAnswer": "Two pointers",
+    "difficulty": "Hard",
+    "topic": "Linked Lists"
+  },
+  {
+    "questionText": "Merging two sorted lists complexity?",
+    "options": [
+      "O(n+m)",
+      "O(n^2)",
+      "O(log n)",
+      "O(1)"
+    ],
+    "correctAnswer": "O(n+m)",
+    "difficulty": "Hard",
+    "topic": "Linked Lists"
+  },
+  {
+    "questionText": "Deleting node without head pointer requires?",
+    "options": [
+      "Copy next node",
+      "Traversal",
+      "Sorting",
+      "None of the above"
+    ],
+    "correctAnswer": "Copy next node",
+    "difficulty": "Hard",
+    "topic": "Linked Lists"
+  },
+  {
+    "questionText": "Time complexity of searching linked list?",
+    "options": [
+      "O(n)",
+      "O(log n)",
+      "O(1)",
+      "O(n log n)"
+    ],
+    "correctAnswer": "O(n)",
+    "difficulty": "Hard",
+    "topic": "Linked Lists"
+  },
+  {
+    "questionText": "Space complexity of recursive reverse?",
+    "options": [
+      "O(n)",
+      "O(1)",
+      "O(log n)",
+      "O(n^2)"
+    ],
+    "correctAnswer": "O(n)",
+    "difficulty": "Hard",
+    "topic": "Linked Lists"
+  },
+  {
+    "questionText": "Which list allows O(1) deletion at tail?",
+    "options": [
+      "Doubly linked list",
+      "Singly linked list",
+      "Circular",
+      "None of the above"
+    ],
+    "correctAnswer": "Doubly linked list",
+    "difficulty": "Hard",
+    "topic": "Linked Lists"
+  },
+  {
+    "questionText": "Cycle detection uses how many pointers?",
+    "options": [
+      "Two",
+      "One",
+      "Three",
+      "Four"
+    ],
+    "correctAnswer": "Two",
+    "difficulty": "Hard",
+    "topic": "Linked Lists"
+  },
+  {
+    "questionText": "What is time complexity of push in stack?",
+    "options": [
+      "O(1)",
+      "O(n)",
+      "O(log n)",
+      "O(n log n)"
+    ],
+    "correctAnswer": "O(1)",
+    "difficulty": "Hard",
+    "topic": "Stacks"
+  },
+  {
+    "questionText": "What is time complexity of pop?",
+    "options": [
+      "O(1)",
+      "O(n)",
+      "O(log n)",
+      "O(n^2)"
+    ],
+    "correctAnswer": "O(1)",
+    "difficulty": "Hard",
+    "topic": "Stacks"
+  },
+  {
+    "questionText": "Which problem uses stack?",
+    "options": [
+      "Next greater element",
+      "Binary search",
+      "Heap sort",
+      "BFS"
+    ],
+    "correctAnswer": "Next greater element",
+    "difficulty": "Hard",
+    "topic": "Stacks"
+  },
+  {
+    "questionText": "Balanced parentheses uses?",
+    "options": [
+      "Stack",
+      "Queue",
+      "Array",
+      "Tree"
+    ],
+    "correctAnswer": "Stack",
+    "difficulty": "Hard",
+    "topic": "Stacks"
+  },
+  {
+    "questionText": "Infix to postfix conversion uses?",
+    "options": [
+      "Stack",
+      "Queue",
+      "Tree",
+      "Graph"
+    ],
+    "correctAnswer": "Stack",
+    "difficulty": "Hard",
+    "topic": "Stacks"
+  },
+  {
+    "questionText": "Stack overflow depends on?",
+    "options": [
+      "Memory limit",
+      "Queue size",
+      "Sorting",
+      "None of the above"
+    ],
+    "correctAnswer": "Memory limit",
+    "difficulty": "Hard",
+    "topic": "Stacks"
+  },
+  {
+    "questionText": "Recursive calls stored in?",
+    "options": [
+      "Stack",
+      "Queue",
+      "Heap",
+      "Array"
+    ],
+    "correctAnswer": "Stack",
+    "difficulty": "Hard",
+    "topic": "Stacks"
+  },
+  {
+    "questionText": "Undo-redo systems use?",
+    "options": [
+      "Two stacks",
+      "Queue",
+      "Array",
+      "Tree"
+    ],
+    "correctAnswer": "Two stacks",
+    "difficulty": "Hard",
+    "topic": "Stacks"
+  },
+  {
+    "questionText": "Stack supports which order?",
+    "options": [
+      "LIFO",
+      "FIFO",
+      "Random",
+      "Priority"
+    ],
+    "correctAnswer": "LIFO",
+    "difficulty": "Hard",
+    "topic": "Stacks"
+  },
+  {
+    "questionText": "Postfix evaluation uses?",
+    "options": [
+      "Stack",
+      "Queue",
+      "Tree",
+      "Graph"
+    ],
+    "correctAnswer": "Stack",
+    "difficulty": "Hard",
+    "topic": "Stacks"
+  },
+  {
+    "questionText": "What is time complexity of enqueue?",
+    "options": [
+      "O(1)",
+      "O(n)",
+      "O(log n)",
+      "O(n log n)"
+    ],
+    "correctAnswer": "O(1)",
+    "difficulty": "Hard",
+    "topic": "Queues"
+  },
+  {
+    "questionText": "What is time complexity of dequeue?",
+    "options": [
+      "O(1)",
+      "O(n)",
+      "O(log n)",
+      "O(n^2)"
+    ],
+    "correctAnswer": "O(1)",
+    "difficulty": "Hard",
+    "topic": "Queues"
+  },
+  {
+    "questionText": "Which structure uses queue?",
+    "options": [
+      "BFS",
+      "DFS",
+      "Stack",
+      "Heap"
+    ],
+    "correctAnswer": "BFS",
+    "difficulty": "Hard",
+    "topic": "Queues"
+  },
+  {
+    "questionText": "Circular queue avoids?",
+    "options": [
+      "Wasted space",
+      "Overflow",
+      "Sorting",
+      "None of the above"
+    ],
+    "correctAnswer": "Wasted space",
+    "difficulty": "Hard",
+    "topic": "Queues"
+  },
+  {
+    "questionText": "Queue implemented using stacks requires?",
+    "options": [
+      "Two stacks",
+      "One stack",
+      "Array",
+      "None of the above"
+    ],
+    "correctAnswer": "Two stacks",
+    "difficulty": "Hard",
+    "topic": "Queues"
+  },
+  {
+    "questionText": "Priority queue uses?",
+    "options": [
+      "Heap",
+      "Stack",
+      "Array",
+      "Linked list"
+    ],
+    "correctAnswer": "Heap",
+    "difficulty": "Hard",
+    "topic": "Queues"
+  },
+  {
+    "questionText": "Which operation is costly in simple queue array?",
+    "options": [
+      "Dequeue",
+      "Enqueue",
+      "Peek",
+      "None of the above"
+    ],
+    "correctAnswer": "Dequeue",
+    "difficulty": "Hard",
+    "topic": "Queues"
+  },
+  {
+    "questionText": "Queue supports which order?",
+    "options": [
+      "FIFO",
+      "LIFO",
+      "Random",
+      "Priority"
+    ],
+    "correctAnswer": "FIFO",
+    "difficulty": "Hard",
+    "topic": "Queues"
+  },
+  {
+    "questionText": "Deque allows?",
+    "options": [
+      "Both ends operations",
+      "Front only",
+      "Rear only",
+      "None of the above"
+    ],
+    "correctAnswer": "Both ends operations",
+    "difficulty": "Hard",
+    "topic": "Queues"
+  },
+  {
+    "questionText": "BFS uses?",
+    "options": [
+      "Queue",
+      "Stack",
+      "Tree",
+      "Array"
+    ],
+    "correctAnswer": "Queue",
+    "difficulty": "Hard",
+    "topic": "Queues"
+  },
+  {
+    "questionText": "What is height of balanced binary tree?",
+    "options": [
+      "O(log n)",
+      "O(n)",
+      "O(1)",
+      "O(n log n)"
+    ],
+    "correctAnswer": "O(log n)",
+    "difficulty": "Hard",
+    "topic": "Trees"
+  },
+  {
+    "questionText": "Traversal visiting root first?",
+    "options": [
+      "Preorder",
+      "Inorder",
+      "Postorder",
+      "Level order"
+    ],
+    "correctAnswer": "Preorder",
+    "difficulty": "Hard",
+    "topic": "Trees"
+  },
+  {
+    "questionText": "Traversal visiting root last?",
+    "options": [
+      "Postorder",
+      "Preorder",
+      "Inorder",
+      "Level order"
+    ],
+    "correctAnswer": "Postorder",
+    "difficulty": "Hard",
+    "topic": "Trees"
+  },
+  {
+    "questionText": "Inorder traversal of BST gives?",
+    "options": [
+      "Sorted order",
+      "Reverse",
+      "Random",
+      "None of the above"
+    ],
+    "correctAnswer": "Sorted order",
+    "difficulty": "Hard",
+    "topic": "Trees"
+  },
+  {
+    "questionText": "Full binary tree property?",
+    "options": [
+      "0 or 2 children",
+      "1 child only",
+      "3 children",
+      "None of the above"
+    ],
+    "correctAnswer": "0 or 2 children",
+    "difficulty": "Hard",
+    "topic": "Trees"
+  },
+  {
+    "questionText": "Complete binary tree fills?",
+    "options": [
+      "Left to right",
+      "Right to left",
+      "Random",
+      "None of the above"
+    ],
+    "correctAnswer": "Left to right",
+    "difficulty": "Hard",
+    "topic": "Trees"
+  },
+  {
+    "questionText": "Tree traversal using queue?",
+    "options": [
+      "Level order",
+      "Inorder",
+      "Preorder",
+      "Postorder"
+    ],
+    "correctAnswer": "Level order",
+    "difficulty": "Hard",
+    "topic": "Trees"
+  },
+  {
+    "questionText": "Max nodes at level l?",
+    "options": [
+      "2^l",
+      "l^2",
+      "2l",
+      "l!"
+    ],
+    "correctAnswer": "2^l",
+    "difficulty": "Hard",
+    "topic": "Trees"
+  },
+  {
+    "questionText": "Height of skewed tree?",
+    "options": [
+      "O(n)",
+      "O(log n)",
+      "O(1)",
+      "O(n log n)"
+    ],
+    "correctAnswer": "O(n)",
+    "difficulty": "Hard",
+    "topic": "Trees"
+  },
+  {
+    "questionText": "Leaf node has?",
+    "options": [
+      "No children",
+      "One child",
+      "Two children",
+      "Three"
+    ],
+    "correctAnswer": "No children",
+    "difficulty": "Hard",
+    "topic": "Trees"
+  },
+  {
+    "questionText": "BST property is?",
+    "options": [
+      "Left < root < right",
+      "Random",
+      "Sorted descending",
+      "None of the above"
+    ],
+    "correctAnswer": "Left < root < right",
+    "difficulty": "Hard",
+    "topic": "Trees"
+  },
+  {
+    "questionText": "Search in BST average?",
+    "options": [
+      "O(log n)",
+      "O(n)",
+      "O(1)",
+      "O(n log n)"
+    ],
+    "correctAnswer": "O(log n)",
+    "difficulty": "Hard",
+    "topic": "Trees"
+  },
+  {
+    "questionText": "Search worst in BST?",
+    "options": [
+      "O(n)",
+      "O(log n)",
+      "O(1)",
+      "O(n log n)"
+    ],
+    "correctAnswer": "O(n)",
+    "difficulty": "Hard",
+    "topic": "Trees"
+  },
+  {
+    "questionText": "Insertion in BST average?",
+    "options": [
+      "O(log n)",
+      "O(n)",
+      "O(1)",
+      "O(n^2)"
+    ],
+    "correctAnswer": "O(log n)",
+    "difficulty": "Hard",
+    "topic": "Trees"
+  },
+  {
+    "questionText": "Deletion cases in BST?",
+    "options": [
+      "3",
+      "2",
+      "1",
+      "4"
+    ],
+    "correctAnswer": "3",
+    "difficulty": "Hard",
+    "topic": "Trees"
+  },
+  {
+    "questionText": "Inorder successor is?",
+    "options": [
+      "Next larger",
+      "Next smaller",
+      "Root",
+      "None of the above"
+    ],
+    "correctAnswer": "Next larger",
+    "difficulty": "Hard",
+    "topic": "Trees"
+  },
+  {
+    "questionText": "Balanced BST height?",
+    "options": [
+      "O(log n)",
+      "O(n)",
+      "O(1)",
+      "O(n log n)"
+    ],
+    "correctAnswer": "O(log n)",
+    "difficulty": "Hard",
+    "topic": "Trees"
+  },
+  {
+    "questionText": "Skewed BST behaves like?",
+    "options": [
+      "Linked list",
+      "Array",
+      "Heap",
+      "Queue"
+    ],
+    "correctAnswer": "Linked list",
+    "difficulty": "Hard",
+    "topic": "Trees"
+  },
+  {
+    "questionText": "Minimum in BST?",
+    "options": [
+      "Leftmost node",
+      "Rightmost node",
+      "Root",
+      "None of the above"
+    ],
+    "correctAnswer": "Leftmost node",
+    "difficulty": "Hard",
+    "topic": "Trees"
+  },
+  {
+    "questionText": "Maximum in BST?",
+    "options": [
+      "Rightmost node",
+      "Leftmost node",
+      "Root",
+      "None of the above"
+    ],
+    "correctAnswer": "Rightmost node",
+    "difficulty": "Hard",
+    "topic": "Trees"
+  },
+  {
+    "questionText": "Hash table average search?",
+    "options": [
+      "O(1)",
+      "O(n)",
+      "O(log n)",
+      "O(n log n)"
+    ],
+    "correctAnswer": "O(1)",
+    "difficulty": "Hard",
+    "topic": "Hash Tables"
+  },
+  {
+    "questionText": "Hash collision occurs when?",
+    "options": [
+      "Same index",
+      "Same value",
+      "Same key",
+      "None of the above"
+    ],
+    "correctAnswer": "Same index",
+    "difficulty": "Hard",
+    "topic": "Hash Tables"
+  },
+  {
+    "questionText": "Collision resolution method?",
+    "options": [
+      "Chaining",
+      "Sorting",
+      "Traversal",
+      "None of the above"
+    ],
+    "correctAnswer": "Chaining",
+    "difficulty": "Hard",
+    "topic": "Hash Tables"
+  },
+  {
+    "questionText": "Load factor is?",
+    "options": [
+      "n/m",
+      "m/n",
+      "n^2",
+      "m^2"
+    ],
+    "correctAnswer": "n/m",
+    "difficulty": "Hard",
+    "topic": "Hash Tables"
+  },
+  {
+    "questionText": "Rehashing occurs when?",
+    "options": [
+      "Load factor high",
+      "Sorted",
+      "Empty",
+      "None of the above"
+    ],
+    "correctAnswer": "Load factor high",
+    "difficulty": "Hard",
+    "topic": "Hash Tables"
+  },
+  {
+    "questionText": "Worst-case hash search?",
+    "options": [
+      "O(n)",
+      "O(1)",
+      "O(log n)",
+      "O(n log n)"
+    ],
+    "correctAnswer": "O(n)",
+    "difficulty": "Hard",
+    "topic": "Hash Tables"
+  },
+  {
+    "questionText": "Open addressing uses?",
+    "options": [
+      "Probing",
+      "Chaining",
+      "Sorting",
+      "None of the above"
+    ],
+    "correctAnswer": "Probing",
+    "difficulty": "Hard",
+    "topic": "Hash Tables"
+  },
+  {
+    "questionText": "Hash table space complexity?",
+    "options": [
+      "O(n)",
+      "O(1)",
+      "O(log n)",
+      "O(n^2)"
+    ],
+    "correctAnswer": "O(n)",
+    "difficulty": "Hard",
+    "topic": "Hash Tables"
+  },
+  {
+    "questionText": "Perfect hashing means?",
+    "options": [
+      "No collisions",
+      "All collisions",
+      "Sorted",
+      "None of the above"
+    ],
+    "correctAnswer": "No collisions",
+    "difficulty": "Hard",
+    "topic": "Hash Tables"
+  },
+  {
+    "questionText": "Hash function maps?",
+    "options": [
+      "Key to index",
+      "Index to key",
+      "Value to key",
+      "None of the above"
+    ],
+    "correctAnswer": "Key to index",
+    "difficulty": "Hard",
+    "topic": "Hash Tables"
+  },
+  {
+    "questionText": "Best case bubble sort?",
+    "options": [
+      "O(n)",
+      "O(n^2)",
+      "O(log n)",
+      "O(n log n)"
+    ],
+    "correctAnswer": "O(n)",
+    "difficulty": "Hard",
+    "topic": "Sorting"
+  },
+  {
+    "questionText": "Worst case bubble sort?",
+    "options": [
+      "O(n^2)",
+      "O(n)",
+      "O(log n)",
+      "O(n log n)"
+    ],
+    "correctAnswer": "O(n^2)",
+    "difficulty": "Hard",
+    "topic": "Sorting"
+  },
+  {
+    "questionText": "Merge sort time complexity?",
+    "options": [
+      "O(n log n)",
+      "O(n^2)",
+      "O(n)",
+      "O(log n)"
+    ],
+    "correctAnswer": "O(n log n)",
+    "difficulty": "Hard",
+    "topic": "Sorting"
+  },
+  {
+    "questionText": "Quick sort average?",
+    "options": [
+      "O(n log n)",
+      "O(n^2)",
+      "O(n)",
+      "O(log n)"
+    ],
+    "correctAnswer": "O(n log n)",
+    "difficulty": "Hard",
+    "topic": "Sorting"
+  },
+  {
+    "questionText": "Quick sort worst?",
+    "options": [
+      "O(n^2)",
+      "O(n log n)",
+      "O(n)",
+      "O(log n)"
+    ],
+    "correctAnswer": "O(n^2)",
+    "difficulty": "Hard",
+    "topic": "Sorting"
+  },
+  {
+    "questionText": "Heap sort complexity?",
+    "options": [
+      "O(n log n)",
+      "O(n^2)",
+      "O(n)",
+      "O(log n)"
+    ],
+    "correctAnswer": "O(n log n)",
+    "difficulty": "Hard",
+    "topic": "Sorting"
+  },
+  {
+    "questionText": "Stable sort means?",
+    "options": [
+      "Preserves order",
+      "Random order",
+      "Reverse",
+      "None of the above"
+    ],
+    "correctAnswer": "Preserves order",
+    "difficulty": "Hard",
+    "topic": "Sorting"
+  },
+  {
+    "questionText": "In-place sort uses?",
+    "options": [
+      "Constant space",
+      "Extra space",
+      "Stack",
+      "None of the above"
+    ],
+    "correctAnswer": "Constant space",
+    "difficulty": "Hard",
+    "topic": "Sorting"
+  },
+  {
+    "questionText": "Selection sort complexity?",
+    "options": [
+      "O(n^2)",
+      "O(n)",
+      "O(log n)",
+      "O(n log n)"
+    ],
+    "correctAnswer": "O(n^2)",
+    "difficulty": "Hard",
+    "topic": "Sorting"
+  },
+  {
+    "questionText": "Insertion sort best case?",
+    "options": [
+      "O(n)",
+      "O(n^2)",
+      "O(log n)",
+      "O(n log n)"
+    ],
+    "correctAnswer": "O(n)",
+    "difficulty": "Hard",
+    "topic": "Sorting"
+  },
+  {
+    "questionText": "Which technique is used to find duplicates in array with O(n) time?",
+    "options": [
+      "Hashing",
+      "Brute force",
+      "Merge sort",
+      "Binary search"
+    ],
+    "correctAnswer": "Hashing",
+    "difficulty": "Hard",
+    "topic": "Arrays"
+  },
+  {
+    "questionText": "Minimum number of comparisons to find min and max in array?",
+    "options": [
+      "3n/2 - 2",
+      "n-1",
+      "2n",
+      "n^2"
+    ],
+    "correctAnswer": "3n/2 - 2",
+    "difficulty": "Hard",
+    "topic": "Arrays"
+  },
+  {
+    "questionText": "What is the time complexity of deleting middle node in doubly linked list?",
+    "options": [
+      "O(1)",
+      "O(n)",
+      "O(log n)",
+      "O(n^2)"
+    ],
+    "correctAnswer": "O(1)",
+    "difficulty": "Hard",
+    "topic": "Linked Lists"
+  },
+  {
+    "questionText": "Detecting intersection of two linked lists requires?",
+    "options": [
+      "Hashing",
+      "Sorting",
+      "Traversal",
+      "DFS"
+    ],
+    "correctAnswer": "Hashing",
+    "difficulty": "Hard",
+    "topic": "Linked Lists"
+  },
+  {
+    "questionText": "What is the space complexity of iterative DFS using stack?",
+    "options": [
+      "O(h)",
+      "O(n)",
+      "O(log n)",
+      "O(n log n)"
+    ],
+    "correctAnswer": "O(h)",
+    "difficulty": "Hard",
+    "topic": "Stacks"
+  },
+  {
+    "questionText": "Next greater element problem is solved efficiently using?",
+    "options": [
+      "Stack",
+      "Queue",
+      "Array",
+      "Linked List"
+    ],
+    "correctAnswer": "Stack",
+    "difficulty": "Hard",
+    "topic": "Stacks"
+  },
+  {
+    "questionText": "Which queue variant supports both priority and FIFO?",
+    "options": [
+      "Priority deque",
+      "Simple queue",
+      "Circular queue",
+      "Deque"
+    ],
+    "correctAnswer": "Priority deque",
+    "difficulty": "Hard",
+    "topic": "Queues"
+  },
+  {
+    "questionText": "Time complexity to reverse first k elements of queue?",
+    "options": [
+      "O(k)",
+      "O(n)",
+      "O(n^2)",
+      "O(log n)"
+    ],
+    "correctAnswer": "O(k)",
+    "difficulty": "Hard",
+    "topic": "Queues"
+  },
+  {
+    "questionText": "Maximum elements in complete binary tree of height h?",
+    "options": [
+      "2^(h+1)-1",
+      "2^h",
+      "2h",
+      "h^2"
+    ],
+    "correctAnswer": "2^(h+1)-1",
+    "difficulty": "Hard",
+    "topic": "Trees"
+  },
+  {
+    "questionText": "Number of null links in binary tree with n nodes?",
+    "options": [
+      "n+1",
+      "n-1",
+      "n",
+      "2n"
+    ],
+    "correctAnswer": "n+1",
+    "difficulty": "Hard",
+    "topic": "Trees"
+  },
+  {
+    "questionText": "Height of AVL tree with n nodes?",
+    "options": [
+      "O(log n)",
+      "O(n)",
+      "O(n^2)",
+      "O(n log n)"
+    ],
+    "correctAnswer": "O(log n)",
+    "difficulty": "Hard",
+    "topic": "Trees"
+  },
+  {
+    "questionText": "Which BST operation may require tree rotation?",
+    "options": [
+      "Insertion",
+      "Search",
+      "Traversal",
+      "Deletion"
+    ],
+    "correctAnswer": "Insertion",
+    "difficulty": "Hard",
+    "topic": "Trees"
+  },
+  {
+    "questionText": "Finding predecessor in BST requires?",
+    "options": [
+      "O(h)",
+      "O(n)",
+      "O(1)",
+      "O(log n)"
+    ],
+    "correctAnswer": "O(h)",
+    "difficulty": "Hard",
+    "topic": "Trees"
+  },
+  {
+    "questionText": "Load factor above 1 in hash table means?",
+    "options": [
+      "More elements than slots",
+      "Empty table",
+      "Collision-free",
+      "Sorted table"
+    ],
+    "correctAnswer": "More elements than slots",
+    "difficulty": "Hard",
+    "topic": "Hash Tables"
+  },
+  {
+    "questionText": "Open addressing in hash table may cause?",
+    "options": [
+      "Clustering",
+      "Underflow",
+      "Overflow",
+      "Sorted data"
+    ],
+    "correctAnswer": "Clustering",
+    "difficulty": "Hard",
+    "topic": "Hash Tables"
+  },
+  {
+    "questionText": "Which sorting algorithm is stable and in-place?",
+    "options": [
+      "Insertion sort",
+      "Merge sort",
+      "Heap sort",
+      "Quick sort"
+    ],
+    "correctAnswer": "Insertion sort",
+    "difficulty": "Hard",
+    "topic": "Sorting"
+  },
+  {
+    "questionText": "Time complexity of finding kth smallest element using heap?",
+    "options": [
+      "O(k log n)",
+      "O(n)",
+      "O(log n)",
+      "O(n^2)"
+    ],
+    "correctAnswer": "O(k log n)",
+    "difficulty": "Hard",
+    "topic": "Sorting"
+  },
+  {
+    "questionText": "Counting sort works best for?",
+    "options": [
+      "Small range integers",
+      "Large floats",
+      "Strings",
+      "Random arrays"
+    ],
+    "correctAnswer": "Small range integers",
+    "difficulty": "Hard",
+    "topic": "Sorting"
+  },
+  {
+    "questionText": "Radix sort requires which stable sort?",
+    "options": [
+      "Counting sort",
+      "Quick sort",
+      "Merge sort",
+      "Heap sort"
+    ],
+    "correctAnswer": "Counting sort",
+    "difficulty": "Hard",
+    "topic": "Sorting"
+  },
+  {
+    "questionText": "Which traversal is used to serialize tree in compact form?",
+    "options": [
+      "Preorder",
+      "Inorder",
+      "Postorder",
+      "Level order"
+    ],
+    "correctAnswer": "Preorder",
+    "difficulty": "Hard",
+    "topic": "Trees"
+  }
+]
