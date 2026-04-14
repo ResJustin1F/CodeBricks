@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.geometry.Insets?>
+
+<StackPane
+        xmlns:fx="http://javafx.com/fxml"
+        fx:controller="com.codebricks.controllers.RegistrationController"
+        styleClass="screen-root"
+        prefWidth="800"
+        prefHeight="600">
+
+    <VBox alignment="CENTER" spacing="12" maxWidth="448">
+
+        <!-- Logo + Title -->
+        <Label text="CodeBricks" styleClass="text-title"/>
+        <Label
+                text="Master Data Structures, One Quiz at a Time"
+                styleClass="text-subtitle"/>
+
+        <!-- Card -->
+        <VBox styleClass="card" spacing="0" maxWidth="448">
+            <VBox.margin>
+                <Insets top="12"/>
+            </VBox.margin>
+            <padding>
+                <Insets top="32" right="32" bottom="32" left="32"/>
+            </padding>
+
+            <!-- Heading -->
+            <Label text="Create Account" styleClass="text-heading"/>
+
+            <!-- Email -->
+            <TextField
+                    fx:id="emailField"
+                    promptText="Enter your email"
+                    styleClass="input-field">
+                <VBox.margin>
+                    <Insets top="24"/>
+                </VBox.margin>
+            </TextField>
+
+            <!-- Password -->
+            <PasswordField
+                    fx:id="passwordField"
+                    promptText="Enter your password"
+                    styleClass="input-field">
+                <VBox.margin>
+                    <Insets top="12"/>
+                </VBox.margin>
+            </PasswordField>
+
+            <!-- Confirm Password -->
+            <PasswordField
+                    fx:id="confirmPasswordField"
+                    promptText="Confirm your password"
+                    styleClass="input-field">
+                <VBox.margin>
+                    <Insets top="12"/>
+                </VBox.margin>
+            </PasswordField>
+
+            <!-- Error label -->
+            <Label
+                    fx:id="errorLabel"
+                    text=""
+                    wrapText="true">
+                <VBox.margin>
+                    <Insets top="8"/>
+                </VBox.margin>
+            </Label>
+
+            <!-- Create Account Button -->
+            <Button
+                    text="Create Account"
+                    styleClass="btn-primary"
+                    maxWidth="Infinity"
+                    onAction="#handleCreateAccount">
+                <VBox.margin>
+                    <Insets top="16"/>
+                </VBox.margin>
+            </Button>
+
+            <!-- Divider -->
+            <Pane styleClass="divider-line" maxWidth="Infinity">
+                <VBox.margin>
+                    <Insets top="24" bottom="16"/>
+                </VBox.margin>
+            </Pane>
+
+            <!-- Login link -->
+            <HBox alignment="CENTER" spacing="4">
+                <Label text="Already have an account?" styleClass="text-muted"/>
+                <Label
+                        text="Login here"
+                        styleClass="text-link"
+                        onMouseClicked="#handleLoginLink"/>
+            </HBox>
+
+        </VBox>
+    </VBox>
+
+</StackPane>
