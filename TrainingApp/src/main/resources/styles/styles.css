@@ -1,0 +1,125 @@
+/* =========================================
+   CodeBricks - Global Stylesheet
+   styles/styles.css
+   ========================================= */
+
+/* ---------- ROOT COLORS ---------- */
+/* Background:    #1E1E2E  (dark page bg)   */
+/* Card:          #2A2A3E  (elevated card)  */
+/* Border:        #364153  (card border)    */
+/* Input bg:      #1E1E2E  (same as page)   */
+/* Input border:  #4A5565                   */
+/* Primary btn:   #3B82F6  (blue)           */
+/* Text white:    #FFFFFF                   */
+/* Text muted:    #99A1AF                   */
+/* Text placeholder: #6A7282               */
+/* Link/accent:   #3B82F6                   */
+
+/* ---------- ROOT SCENE ---------- */
+.root {
+    -fx-background-color: #1E1E2E;
+    -fx-font-family: "Inter", "System";
+}
+
+/* ---------- SCREEN WRAPPER ---------- */
+.screen-root {
+    -fx-background-color: #1E1E2E;
+}
+
+/* ---------- CARD (Login / Register box) ---------- */
+.card {
+    -fx-background-color: #2A2A3E;
+    -fx-background-radius: 14;
+    -fx-border-color: rgba(54, 65, 83, 0.5);
+    -fx-border-width: 1;
+    -fx-border-radius: 14;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.4), 30, 0, 0, 8);
+}
+
+/* ---------- TEXT STYLES ---------- */
+.text-title {
+    -fx-font-size: 30px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #FFFFFF;
+}
+
+.text-subtitle {
+    -fx-font-size: 14px;
+    -fx-text-fill: #99A1AF;
+}
+
+.text-heading {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #FFFFFF;
+}
+
+.text-muted {
+    -fx-font-size: 13px;
+    -fx-text-fill: #99A1AF;
+}
+
+.text-link {
+    -fx-font-size: 13px;
+    -fx-text-fill: #3B82F6;
+    -fx-cursor: hand;
+}
+
+.text-version {
+    -fx-font-size: 11px;
+    -fx-text-fill: #595973;
+}
+
+/* ---------- INPUT FIELDS ---------- */
+.input-field {
+    -fx-background-color: #1E1E2E;
+    -fx-border-color: #4A5565;
+    -fx-border-width: 1;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-text-fill: #FFFFFF;
+    -fx-prompt-text-fill: #6A7282;
+    -fx-font-size: 14px;
+    -fx-padding: 8 12 8 40;
+    -fx-pref-height: 36px;
+}
+
+.input-field:focused {
+    -fx-border-color: #3B82F6;
+    -fx-border-width: 1.5;
+}
+
+/* ---------- PRIMARY BUTTON ---------- */
+.btn-primary {
+    -fx-background-color: #3B82F6;
+    -fx-background-radius: 10;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-pref-height: 36px;
+    -fx-cursor: hand;
+    -fx-border-width: 0;
+}
+
+.btn-primary:hover {
+    -fx-background-color: #2563EB;
+}
+
+.btn-primary:pressed {
+    -fx-background-color: #1D4ED8;
+}
+
+/* ---------- DIVIDER ---------- */
+.divider-line {
+    -fx-background-color: rgba(74, 85, 101, 0.5);
+    -fx-pref-height: 1px;
+}
+
+/* ---------- LOADING DOTS (Splash) ---------- */
+.loading-dot {
+    -fx-fill: #3B82F6;
+}
+
+.loading-dot-inactive {
+    -fx-fill: #595973;
+}
