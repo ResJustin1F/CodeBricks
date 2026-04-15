@@ -1,25 +1,26 @@
 package com.codebricks;
 
 import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
-import javafx.scene.control.Label;
-import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 
 public class MainApp extends Application {
 
     @Override
     public void start(Stage stage) throws Exception {
+        FXMLLoader fxmlLoader = new FXMLLoader(
+                MainApp.class.getResource("/views/splash-view.fxml")
+        );
 
-        Label label = new Label("You are on the dev branch. Test passed.");
-        label.setStyle("-fx-font-size: 20px; -fx-text-fill: #3B82F6; -fx-font-family: 'Courier New';");
+        Scene scene = new Scene(fxmlLoader.load(), 800, 600);
 
-        StackPane root = new StackPane(label);
-        root.setStyle("-fx-background-color: #1E1E2E;");
+        //Load global stylesheet
+        scene.getStylesheets().add(
+                MainApp.class.getResource("/styles/styles.css").toExternalForm()
+        );
 
-        Scene scene = new Scene(root, 800, 600);
-
-        stage.setTitle("CodeBricks - DEV");
+        stage.setTitle("CodeBricks");
         stage.setResizable(false);
         stage.setScene(scene);
         stage.show();
