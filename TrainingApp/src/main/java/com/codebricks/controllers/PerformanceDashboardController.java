@@ -26,6 +26,8 @@ public class PerformanceDashboardController {
 
     @FXML
     public void initialize() {
+        quizHistoryTable.setColumnResizePolicy(TableView.CONSTRAINED_RESIZE_POLICY_FLEX_LAST_COLUMN);
+
         dateColumn.setCellValueFactory(cellData -> cellData.getValue().dateProperty());
         difficultyColumn.setCellValueFactory(cellData -> cellData.getValue().difficultyProperty());
         scoreColumn.setCellValueFactory(cellData -> cellData.getValue().scoreProperty());
