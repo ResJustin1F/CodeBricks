@@ -122,4 +122,169 @@
 
 .loading-dot-inactive {
     -fx-fill: #595973;
+
+
+    /* ---------- PERFORMANCE DASHBOARD(jeremy) ---------- */
+    .performance-dashboard-root {
+        -fx-background-color: #F4F6F9;
+    }
+
+    .performance-navbar {
+        -fx-background-color: #1E1E2E;
+    }
+
+    .performance-navbar-logo {
+        -fx-text-fill: #FFFFFF;
+        -fx-font-size: 28px;
+        -fx-font-weight: bold;
+    }
+
+    .performance-back-button {
+        -fx-background-color: #243B72;
+        -fx-background-radius: 10;
+        -fx-text-fill: #60A5FA;
+        -fx-font-size: 15px;
+        -fx-font-weight: bold;
+        -fx-padding: 10 20 10 20;
+        -fx-cursor: hand;
+        -fx-border-width: 0;
+    }
+
+    .performance-back-button:hover {
+        -fx-background-color: #2D4A8E;
+    }
+
+    .performance-content {
+        -fx-background-color: #F4F6F9;
+    }
+
+    .performance-title {
+        -fx-text-fill: #20243A;
+        -fx-font-size: 34px;
+        -fx-font-weight: bold;
+    }
+
+    .performance-subtitle {
+        -fx-text-fill: #7B8798;
+        -fx-font-size: 16px;
+    }
+
+    .performance-summary-card {
+        -fx-background-color: #FFFFFF;
+        -fx-background-radius: 18;
+        -fx-border-color: transparent transparent transparent #3B82F6;
+        -fx-border-width: 0 0 0 5;
+        -fx-border-radius: 18;
+        -fx-effect: dropshadow(gaussian, rgba(15, 23, 42, 0.10), 24, 0.15, 0, 8);
+        -fx-min-height: 108;
+    }
+
+    .performance-summary-card-content {
+        -fx-padding: 22 26 22 24;
+    }
+
+    .performance-summary-value {
+        -fx-text-fill: #3B82F6;
+        -fx-font-size: 38px;
+        -fx-font-weight: bold;
+    }
+
+    .performance-summary-label {
+        -fx-text-fill: #8A94A6;
+        -fx-font-size: 15px;
+    }
+
+    .performance-table-card {
+        -fx-background-color: #FFFFFF;
+        -fx-background-radius: 22;
+        -fx-border-radius: 22;
+        -fx-effect: dropshadow(gaussian, rgba(15, 23, 42, 0.10), 28, 0.15, 0, 10);
+    }
+
+    .performance-table {
+        -fx-background-color: transparent;
+        -fx-border-color: transparent;
+        -fx-padding: 0 18 0 18;
+    }
+
+    .performance-table .column-header-background {
+        -fx-background-color: #F1F4F8;
+        -fx-background-radius: 22 22 0 0;
+        -fx-padding: 16 0 16 0;
+    }
+
+    .performance-table .column-header {
+        -fx-background-color: transparent;
+        -fx-border-color: transparent;
+    }
+
+    .performance-table .column-header .label {
+        -fx-text-fill: #8A94A6;
+        -fx-font-size: 13px;
+        -fx-font-weight: bold;
+    }
+
+    .performance-table .filler {
+        -fx-background-color: #F1F4F8;
+    }
+
+    .performance-table .table-row-cell {
+        -fx-background-color: #FFFFFF;
+        -fx-border-color: transparent transparent #E7ECF3 transparent;
+        -fx-cell-size: 72px;
+    }
+
+    .performance-table .table-row-cell:empty {
+        -fx-background-color: #FFFFFF;
+        -fx-border-color: transparent;
+    }
+
+    .performance-table .table-cell {
+        -fx-background-color: transparent;
+        -fx-border-color: transparent;
+        -fx-text-fill: #20243A;
+        -fx-font-size: 15px;
+        -fx-alignment: CENTER-LEFT;
+    }
+
+    .difficulty-pill-easy {
+        -fx-background-color: #DCFCE7;
+        -fx-background-radius: 999;
+        -fx-text-fill: #22C55E;
+        -fx-font-weight: bold;
+        -fx-padding: 7 16 7 16;
+    }
+
+    .difficulty-pill-medium {
+        -fx-background-color: #FEF3C7;
+        -fx-background-radius: 999;
+        -fx-text-fill: #F59E0B;
+        -fx-font-weight: bold;
+        -fx-padding: 7 16 7 16;
+    }
+
+    .difficulty-pill-hard {
+        -fx-background-color: #FEE2E2;
+        -fx-background-radius: 999;
+        -fx-text-fill: #EF4444;
+        -fx-font-weight: bold;
+        -fx-padding: 7 16 7 16;
+    }
+
+    .performance-footer-note {
+        -fx-text-fill: #98A2B3;
+        -fx-font-size: 13px;
+    }
+
+    .performance-footer-divider {
+        -fx-background-color: #E5EAF1;
+        -fx-pref-height: 1;
+    }
+
+    .performance-bottom-note {
+        -fx-text-fill: #B0B8C5;
+        -fx-font-size: 12px;
+        -fx-alignment: CENTER;
+    }
+
 }

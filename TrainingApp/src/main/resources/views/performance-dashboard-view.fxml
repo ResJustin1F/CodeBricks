@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Priority?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.codebricks.controllers.PerformanceDashboardController"
+            prefWidth="1000"
+            prefHeight="760"
+            styleClass="performance-dashboard-root">
+
+    <top>
+        <HBox alignment="CENTER_LEFT" prefHeight="70.0" styleClass="performance-navbar">
+            <padding>
+                <Insets top="0" right="28" bottom="0" left="28"/>
+            </padding>
+
+            <Label text="CodeBricks" styleClass="performance-navbar-logo"/>
+
+            <Region HBox.hgrow="ALWAYS"/>
+
+            <Button text="&lt; Back"
+                    onAction="#handleBack"
+                    styleClass="performance-back-button"/>
+        </HBox>
+    </top>
+
+    <center>
+        <VBox spacing="24" styleClass="performance-content">
+            <padding>
+                <Insets top="32" right="48" bottom="20" left="48"/>
+            </padding>
+
+            <VBox spacing="6">
+                <Label text="Performance Dashboard" styleClass="performance-title"/>
+                <Label text="A log of all your completed quiz sessions." styleClass="performance-subtitle"/>
+            </VBox>
+
+            <HBox spacing="24">
+                <StackPane HBox.hgrow="ALWAYS" styleClass="performance-summary-card">
+                    <VBox alignment="CENTER_LEFT" spacing="6" styleClass="performance-summary-card-content">
+                        <Label fx:id="totalQuizzesValueLabel" styleClass="performance-summary-value"/>
+                        <Label text="Total Quizzes Completed" styleClass="performance-summary-label"/>
+                    </VBox>
+                </StackPane>
+
+                <StackPane HBox.hgrow="ALWAYS" styleClass="performance-summary-card">
+                    <VBox alignment="CENTER_LEFT" spacing="6" styleClass="performance-summary-card-content">
+                        <Label fx:id="bestScoreValueLabel" styleClass="performance-summary-value"/>
+                        <Label text="Best Score" styleClass="performance-summary-label"/>
+                    </VBox>
+                </StackPane>
+            </HBox>
+
+            <VBox VBox.vgrow="ALWAYS" spacing="12" styleClass="performance-table-card">
+                <TableView fx:id="quizHistoryTable"
+                           prefHeight="320"
+                           VBox.vgrow="ALWAYS"
+                           columnResizePolicy="CONSTRAINED_RESIZE_POLICY"
+                           styleClass="performance-table">
+                    <columns>
+                        <TableColumn fx:id="dateColumn" text="Date"/>
+                        <TableColumn fx:id="difficultyColumn" text="Difficulty"/>
+                        <TableColumn fx:id="scoreColumn" text="Score"/>
+                    </columns>
+                </TableView>
+
+                <Label text="Showing your 3 most recent quiz sessions"
+                       styleClass="performance-footer-note">
+                    <VBox.margin>
+                        <Insets top="0" right="0" bottom="18" left="30"/>
+                    </VBox.margin>
+                </Label>
+            </VBox>
+
+            <VBox spacing="18">
+                <Region styleClass="performance-footer-divider"/>
+                <Label text="CodeBricks · Farmingdale State College · CSC325"
+                       maxWidth="Infinity"
+                       styleClass="performance-bottom-note"/>
+            </VBox>
+        </VBox>
+    </center>
+</BorderPane>
+
