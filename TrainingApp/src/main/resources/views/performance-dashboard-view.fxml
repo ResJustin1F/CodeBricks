@@ -14,8 +14,8 @@
 
 <BorderPane xmlns:fx="http://javafx.com/fxml"
             fx:controller="com.codebricks.controllers.PerformanceDashboardController"
-            prefWidth="1000"
-            prefHeight="760"
+            prefWidth="800"
+            prefHeight="600"
             styleClass="performance-dashboard-root">
 
     <top>
