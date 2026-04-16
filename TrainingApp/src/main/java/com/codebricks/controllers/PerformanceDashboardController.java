@@ -85,6 +85,7 @@ public class PerformanceDashboardController {
     private void handleBack() {
         try {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/views/login-view.fxml"));
+            // TODO: change to home-dashboard-view.fxml once Matt's screen is merged
             Scene scene = new Scene(loader.load(), 800, 600);
             scene.getStylesheets().add(
                     getClass().getResource("/styles/styles.css").toExternalForm()
