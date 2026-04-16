@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.geometry.Insets?>
+
+<StackPane
+        xmlns:fx="http://javafx.com/fxml"
+        fx:controller="com.codebricks.controllers.SplashController"
+        styleClass="screen-root"
+        prefWidth="800"
+        prefHeight="600">
+
+    <!-- CENTER CONTENT -->
+    <VBox alignment="CENTER" spacing="16">
+
+        <!-- Logo + App Name -->
+        <Label text="CodeBricks" styleClass="text-title"/>
+
+        <!-- Tagline -->
+        <Label text="Master Data Structures, One Quiz at a Time"
+               styleClass="text-subtitle"/>
+
+        <!-- Loading Dots -->
+        <HBox alignment="CENTER" spacing="8">
+            <VBox.margin>
+                <Insets top="40"/>
+            </VBox.margin>
+            <Circle fx:id="dot1" radius="5" styleClass="loading-dot"/>
+            <Circle fx:id="dot2" radius="5" styleClass="loading-dot-inactive"/>
+            <Circle fx:id="dot3" radius="5" styleClass="loading-dot-inactive"/>
+        </HBox>
+
+    </VBox>
+
+    <!-- BOTTOM LABELS pinned to bottom -->
+    <VBox alignment="BOTTOM_CENTER">
+        <VBox.margin>
+            <Insets bottom="24"/>
+        </VBox.margin>
+        <Label text="Version 0.1" styleClass="text-version"/>
+        <Label text="Farmingdale State College · CSC325"
+               styleClass="text-version"/>
+    </VBox>
+
+</StackPane>

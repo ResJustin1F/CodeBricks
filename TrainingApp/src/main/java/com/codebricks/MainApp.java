@@ -5,17 +5,23 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-public class HelloApplication extends Application {
+public class MainApp extends Application {
 
     @Override
     public void start(Stage stage) throws Exception {
         FXMLLoader fxmlLoader = new FXMLLoader(
-                HelloApplication.class.getResource("/views/hello-view.fxml")
+                MainApp.class.getResource("/views/splash-view.fxml")
         );
 
-        Scene scene = new Scene(fxmlLoader.load(), 400, 300);
+        Scene scene = new Scene(fxmlLoader.load(), 800, 600);
+
+        //Load global stylesheet
+        scene.getStylesheets().add(
+                MainApp.class.getResource("/styles/styles.css").toExternalForm()
+        );
 
         stage.setTitle("CodeBricks");
+        stage.setResizable(false);
         stage.setScene(scene);
         stage.show();
     }
