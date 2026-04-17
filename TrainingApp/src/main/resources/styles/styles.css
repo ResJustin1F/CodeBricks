@@ -325,24 +325,6 @@
     -fx-background-color: #F0F2F7;
 }
 
-.card-easy {
-    -fx-border-color: #22C55E;
-    -fx-border-width: 3 0 0 0;
-    -fx-border-radius: 14;
-}
-
-.card-medium {
-    -fx-border-color: #F59E0B;
-    -fx-border-width: 3 0 0 0;
-    -fx-border-radius: 14;
-}
-
-.card-hard {
-    -fx-border-color: #EF4444;
-    -fx-border-width: 3 0 0 0;
-    -fx-border-radius: 14;
-}
-
 /* Difficulty title */
 .text-diff-title {
     -fx-font-size: 22px;

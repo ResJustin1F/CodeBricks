@@ -30,6 +30,7 @@ public class DifficultyController {
     @FXML
     private void handleBack() {
         navigateToFxml("/views/login-view.fxml");
+        // TODO: change to home-dashboard-view.fxml (@matt)
     }
 
     //Navigation helpers
