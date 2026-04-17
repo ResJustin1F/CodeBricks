@@ -10,7 +10,8 @@ public class MainApp extends Application {
     @Override
     public void start(Stage stage) throws Exception {
         FXMLLoader fxmlLoader = new FXMLLoader(
-                MainApp.class.getResource("/views/splash-view.fxml")
+                MainApp.class.getResource("/views/difficulty-view.fxml")
+                //TODO change back to splash-view.fxml when group is done this week
         );
 
         Scene scene = new Scene(fxmlLoader.load(), 800, 600);
