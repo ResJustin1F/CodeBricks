@@ -75,6 +75,7 @@ public class ResultController {
     @FXML
     private void handleHome() {
         navigateToFxml("/views/login-view.fxml", false);
+        // TODO: change to home-dashboard-view.fxml (@matt)
     }
 
     private void navigateToFxml(String fxmlPath, boolean isQuiz) {
