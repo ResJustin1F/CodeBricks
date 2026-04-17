@@ -5,3 +5,5 @@ public class QuizController {
         System.out.println("Quiz loaded: " + diff);
     }
 }
+
+//This controller should come from Edward. Good thinking Matt, just waiting on Edward's code to replace this file.
