@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+<?import javafx.geometry.Insets?>
+
+<BorderPane
+        xmlns:fx="http://javafx.com/fxml"
+        fx:id="rootPane"
+        fx:controller="com.codebricks.controllers.HomeDashboardController"
+        styleClass="dashboard-root"
+        prefWidth="800"
+        prefHeight="600">
+
+    <!-- ══ NAVBAR ══════════════════════════════════════════════════════════ -->
+    <top>
+        <HBox styleClass="diff-navbar" alignment="CENTER_LEFT" prefHeight="56">
+            <padding><Insets left="24" right="24"/></padding>
+
+            <!-- Left: icon + wordmark -->
+            <HBox alignment="CENTER_LEFT" spacing="10" HBox.hgrow="ALWAYS">
+                <Label text="⊞" styleClass="diff-nav-icon"/>
+                <Label text="CodeBricks" styleClass="diff-nav-title"/>
+            </HBox>
+
+            <!-- Right: welcome + logout -->
+            <HBox alignment="CENTER_RIGHT" spacing="16">
+                <Label fx:id="welcomeLabel"
+                       text="Welcome, User"
+                       styleClass="dashboard-welcome-label"/>
+                <Button text="Logout"
+                        styleClass="diff-nav-back"
+                        onAction="#handleLogout"/>
+            </HBox>
+        </HBox>
+    </top>
+
+    <!-- ══ MAIN CONTENT ════════════════════════════════════════════════════ -->
+    <center>
+        <VBox alignment="TOP_LEFT" spacing="24" styleClass="dashboard-content">
+            <padding><Insets top="40" left="40" right="40" bottom="40"/></padding>
+
+            <!-- Page heading -->
+            <VBox spacing="6">
+                <Label text="What would you like to do today?"
+                       styleClass="dashboard-page-title"/>
+                <Label text="Practice data structures through interactive quizzes. Track your progress over time."
+                       styleClass="text-subtitle"/>
+            </VBox>
+
+            <!-- Cards row -->
+            <HBox spacing="16" fillHeight="true">
+
+                <!-- Start a Quiz card -->
+                <VBox styleClass="dashboard-quiz-card" spacing="0"
+                      HBox.hgrow="ALWAYS">
+                    <padding><Insets top="24" right="28" bottom="24" left="28"/></padding>
+
+                    <Label text="Start a Quiz" styleClass="dashboard-card-title"/>
+
+                    <Label text="Test your knowledge on Linked Lists, Stacks, Queues, Trees, Hash Tables and more."
+                           styleClass="text-muted"
+                           wrapText="true">
+                        <VBox.margin><Insets top="10"/></VBox.margin>
+                    </Label>
+
+                    <!-- Difficulty pills -->
+                    <Label text="AVAILABLE DIFFICULTIES"
+                           styleClass="text-topics-label">
+                        <VBox.margin><Insets top="20"/></VBox.margin>
+                    </Label>
+                    <HBox spacing="10">
+                        <VBox.margin><Insets top="8"/></VBox.margin>
+                        <Label text="Easy"   styleClass="badge, badge-easy"/>
+                        <Label text="Medium" styleClass="badge, badge-medium"/>
+                        <Label text="Hard"   styleClass="badge, badge-hard"/>
+                    </HBox>
+
+                    <!-- Divider -->
+                    <Pane styleClass="divider-line" maxWidth="Infinity">
+                        <VBox.margin><Insets top="16" bottom="16"/></VBox.margin>
+                    </Pane>
+
+                    <!-- Select Difficulty button -->
+                    <Button text="Select Difficulty  →"
+                            styleClass="btn-primary"
+                            maxWidth="Infinity"
+                            onAction="#handleSelectDifficulty"/>
+                </VBox>
+
+                <!-- My Performance card -->
+                <VBox styleClass="dashboard-performance-card" spacing="0"
+                      prefWidth="216">
+                    <padding><Insets top="22" right="18" bottom="22" left="18"/></padding>
+
+                    <Label text="My Performance" styleClass="dashboard-card-title"/>
+                    <Pane styleClass="divider-line" maxWidth="Infinity">
+                        <VBox.margin><Insets top="12" bottom="12"/></VBox.margin>
+                    </Pane>
+
+                    <Label fx:id="quizCountLabel"
+                           text="0"
+                           styleClass="dashboard-quiz-count"/>
+
+                    <Label text="Quizzes Taken"
+                           styleClass="dashboard-card-subtitle">
+                        <VBox.margin><Insets top="4"/></VBox.margin>
+                    </Label>
+
+                    <Label text="Complete a quiz to see your stats here."
+                           styleClass="text-muted"
+                           wrapText="true">
+                        <VBox.margin><Insets top="8"/></VBox.margin>
+                    </Label>
+
+                    <Region VBox.vgrow="ALWAYS"/>
+
+                    <Button text="View Dashboard"
+                            styleClass="dashboard-view-btn"
+                            maxWidth="Infinity"
+                            onAction="#handleViewDashboard"/>
+                </VBox>
+
+            </HBox>
+
+            <!-- How it works tip card -->
+            <VBox styleClass="dashboard-tip-card" spacing="6">
+                <padding><Insets top="14" right="20" bottom="14" left="20"/></padding>
+                <Label text="HOW IT WORKS" styleClass="dashboard-tip-label"/>
+                <Label text="Click &quot;Select Difficulty&quot; to choose Easy, Medium, or Hard → Answer 5 randomized questions → View your results and track your progress."
+                       styleClass="text-muted"
+                       wrapText="true"/>
+            </VBox>
+
+            <!-- Footer -->
+            <HBox alignment="CENTER" maxWidth="Infinity">
+                <Label text="CodeBricks  ·  Farmingdale State College  ·  CSC325"
+                       styleClass="results-footer"
+                       maxWidth="Infinity"
+                       alignment="CENTER"/>
+            </HBox>
+
+        </VBox>
+    </center>
+
+</BorderPane>

@@ -583,3 +583,85 @@
     -fx-font-size: 12px;
     -fx-text-fill: #9CA3AF;
 }
+
+/* ---------- HOME DASHBOARD (jamal) ---------- */
+.dashboard-root {
+    -fx-background-color: #F4F6F9;
+}
+
+.dashboard-content {
+    -fx-background-color: #F4F6F9;
+}
+
+.dashboard-page-title {
+    -fx-font-size: 26px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1E1E2E;
+}
+
+.dashboard-welcome-label {
+    -fx-font-size: 13px;
+    -fx-text-fill: #99A1AF;
+}
+
+.dashboard-card-title {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1E1E2E;
+}
+
+.dashboard-card-subtitle {
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #737D8C;
+}
+
+.dashboard-quiz-card {
+    -fx-background-color: white;
+    -fx-background-radius: 14;
+    -fx-border-color: transparent transparent transparent #3B82F6;
+    -fx-border-width: 0 0 0 6;
+    -fx-border-radius: 14;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.08), 16, 0, 0, 4);
+}
+
+.dashboard-performance-card {
+    -fx-background-color: white;
+    -fx-background-radius: 14;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.08), 16, 0, 0, 4);
+}
+
+.dashboard-quiz-count {
+    -fx-font-size: 52px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #3B82F6;
+}
+
+.dashboard-view-btn {
+    -fx-background-color: rgba(59, 130, 246, 0.1);
+    -fx-background-radius: 8;
+    -fx-text-fill: #3B82F6;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-pref-height: 34px;
+    -fx-cursor: hand;
+    -fx-border-width: 0;
+}
+
+.dashboard-view-btn:hover {
+    -fx-background-color: rgba(59, 130, 246, 0.18);
+}
+
+.dashboard-tip-card {
+    -fx-background-color: rgba(59, 130, 246, 0.05);
+    -fx-border-color: rgba(59, 130, 246, 0.15);
+    -fx-border-width: 1;
+    -fx-border-radius: 12;
+    -fx-background-radius: 12;
+}
+
+.dashboard-tip-label {
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #3B82F6;
+}
