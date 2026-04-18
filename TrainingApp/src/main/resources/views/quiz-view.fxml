@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.geometry.Insets?>
+
+<BorderPane
+        xmlns:fx="http://javafx.com/fxml"
+        fx:id="rootPane"
+        fx:controller="com.codebricks.controllers.QuizController"
+        styleClass="dashboard-root"
+        prefWidth="800"
+        prefHeight="600">
+
+    <!-- NAVBAR -->
+    <top>
+        <HBox styleClass="diff-navbar" alignment="CENTER_LEFT" prefHeight="56">
+            <padding><Insets left="24" right="24"/></padding>
+            <HBox alignment="CENTER_LEFT" spacing="10" HBox.hgrow="ALWAYS">
+                <Label text="⊞" styleClass="diff-nav-icon"/>
+                <Label text="CodeBricks" styleClass="diff-nav-title"/>
+                <Label fx:id="difficultyBadgeLabel" text="Easy" styleClass="quiz-badge-easy"/>
+            </HBox>
+            <Button text="&lt; Back" styleClass="diff-nav-back" onAction="#handleBack"/>
+        </HBox>
+    </top>
+
+    <!-- MAIN CONTENT -->
+    <center>
+        <VBox alignment="TOP_LEFT" spacing="16" styleClass="dashboard-content">
+            <padding><Insets top="24" left="40" right="40" bottom="16"/></padding>
+
+            <!-- Question counter -->
+            <Label fx:id="questionCountLabel"
+                   text="Question 1 of 5"
+                   styleClass="quiz-counter-label"/>
+
+            <!-- Progress bar -->
+            <StackPane prefHeight="6" maxWidth="Infinity">
+                <Rectangle height="6" width="720"
+                           arcWidth="10" arcHeight="10"
+                           styleClass="quiz-progress-track"/>
+                <StackPane alignment="CENTER_LEFT">
+                    <Rectangle fx:id="progressFill"
+                               height="6" width="144"
+                               arcWidth="10" arcHeight="10"
+                               styleClass="quiz-progress-fill"/>
+                </StackPane>
+            </StackPane>
+
+            <!-- Question card -->
+            <HBox styleClass="quiz-question-card" prefHeight="130" maxWidth="Infinity">
+                <Pane styleClass="quiz-question-accent" prefWidth="6"/>
+                <VBox spacing="10" HBox.hgrow="ALWAYS">
+                    <padding><Insets top="20" right="24" bottom="20" left="18"/></padding>
+                    <Label text="QUESTION" styleClass="quiz-question-label"/>
+                    <Label fx:id="questionLabel"
+                           text=""
+                           styleClass="quiz-question-text"
+                           wrapText="true"/>
+                    <Label fx:id="topicLabel"
+                           text=""
+                           styleClass="quiz-topic-tag"/>
+                </VBox>
+            </HBox>
+
+            <!-- Answer row 1 -->
+            <HBox spacing="16">
+                <Button fx:id="answerA" text="" styleClass="quiz-answer-btn"
+                        maxWidth="Infinity" prefHeight="62"
+                        onAction="#handleAnswerA" HBox.hgrow="ALWAYS"/>
+                <Button fx:id="answerB" text="" styleClass="quiz-answer-btn"
+                        maxWidth="Infinity" prefHeight="62"
+                        onAction="#handleAnswerB" HBox.hgrow="ALWAYS"/>
+            </HBox>
+
+            <!-- Answer row 2 -->
+            <HBox spacing="16">
+                <Button fx:id="answerC" text="" styleClass="quiz-answer-btn"
+                        maxWidth="Infinity" prefHeight="62"
+                        onAction="#handleAnswerC" HBox.hgrow="ALWAYS"/>
+                <Button fx:id="answerD" text="" styleClass="quiz-answer-btn"
+                        maxWidth="Infinity" prefHeight="62"
+                        onAction="#handleAnswerD" HBox.hgrow="ALWAYS"/>
+            </HBox>
+
+            <!-- Spacer + footer -->
+            <Region VBox.vgrow="ALWAYS"/>
+            <HBox alignment="CENTER" maxWidth="Infinity">
+                <Label text="CodeBricks  ·  Farmingdale State College  ·  CSC325"
+                       styleClass="results-footer"
+                       maxWidth="Infinity"
+                       alignment="CENTER"/>
+            </HBox>
+
+        </VBox>
+    </center>
+
+    <!-- BOTTOM BAR -->
+    <bottom>
+        <HBox styleClass="quiz-bottom-bar" alignment="CENTER" prefHeight="64">
+            <padding><Insets left="40" right="40"/></padding>
+            <Button text="&lt; Back"
+                    styleClass="quiz-back-btn"
+                    prefWidth="120"
+                    onAction="#handlePreviousQuestion"/>
+            <Label fx:id="questionIndexLabel"
+                   text="1 / 5"
+                   styleClass="quiz-index-label"
+                   HBox.hgrow="ALWAYS"
+                   maxWidth="Infinity"
+                   alignment="CENTER"/>
+            <Button fx:id="nextButton"
+                    text="Next →"
+                    styleClass="btn-primary"
+                    prefWidth="140"
+                    prefHeight="40"
+                    onAction="#handleNext"/>
+        </HBox>
+    </bottom>
+
+</BorderPane>

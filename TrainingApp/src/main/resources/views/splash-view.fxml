@@ -41,7 +41,7 @@
         <VBox.margin>
             <Insets bottom="24"/>
         </VBox.margin>
-        <Label text="Version 0.1" styleClass="text-version"/>
+        <Label text="Version 0.8" styleClass="text-version"/>
         <Label text="Farmingdale State College · CSC325"
                styleClass="text-version"/>
     </VBox>
