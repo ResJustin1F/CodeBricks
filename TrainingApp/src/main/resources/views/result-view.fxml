@@ -67,15 +67,14 @@
                     <!-- Stats row: correct + accuracy -->
                     <HBox spacing="56" alignment="CENTER_LEFT">
                         <VBox spacing="2">
-                            <Label fx:id="correctLabel"  text="— of —" styleClass="results-stat-value"/>
-                            <Label                        text="Correct Answers" styleClass="results-stat-label"/>
+                            <Label fx:id="correctLabel" text="— of —" styleClass="results-stat-value"/>
+                            <Label text="Correct Answers" styleClass="results-stat-label"/>
                         </VBox>
                         <VBox spacing="2">
-                            <Label fx:id="accuracyLabel" text="—%"     styleClass="results-stat-value"/>
-                            <Label                        text="Accuracy" styleClass="results-stat-label"/>
+                            <Label fx:id="accuracyLabel" text="—%" styleClass="results-stat-value"/>
+                            <Label text="Accuracy" styleClass="results-stat-label"/>
                         </VBox>
                     </HBox>
-
                     <!-- Pass/fail message -->
                     <Label fx:id="resultMessageLabel"
                            text=""

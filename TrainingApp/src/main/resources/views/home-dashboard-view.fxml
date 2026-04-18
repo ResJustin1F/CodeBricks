@@ -8,6 +8,7 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Button?>
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TextArea?>
 
 <BorderPane
         xmlns:fx="http://javafx.com/fxml"
@@ -50,7 +51,9 @@
                 <Label text="What would you like to do today?"
                        styleClass="dashboard-page-title"/>
                 <Label text="Practice data structures through interactive quizzes. Track your progress over time."
-                       styleClass="text-subtitle"/>
+                       styleClass="text-subtitle"
+                       wrapText="true"
+                       maxWidth="Infinity"/>
             </VBox>
 
             <!-- Cards row -->
@@ -63,11 +66,14 @@
 
                     <Label text="Start a Quiz" styleClass="dashboard-card-title"/>
 
-                    <Label text="Test your knowledge on Linked Lists, Stacks, Queues, Trees, Hash Tables and more."
-                           styleClass="text-muted"
-                           wrapText="true">
+                    <TextArea text="Test your knowledge on Linked Lists, Stacks, Queues, Trees, Hash Tables and more."
+                              styleClass="card-desc-text"
+                              editable="false"
+                              wrapText="true"
+                              prefHeight="50"
+                              maxWidth="Infinity">
                         <VBox.margin><Insets top="10"/></VBox.margin>
-                    </Label>
+                    </TextArea>
 
                     <!-- Difficulty pills -->
                     <Label text="AVAILABLE DIFFICULTIES"
@@ -95,7 +101,7 @@
 
                 <!-- My Performance card -->
                 <VBox styleClass="dashboard-performance-card" spacing="0"
-                      prefWidth="216">
+                      prefWidth="216" minWidth="216">
                     <padding><Insets top="22" right="18" bottom="22" left="18"/></padding>
 
                     <Label text="My Performance" styleClass="dashboard-card-title"/>
@@ -112,11 +118,14 @@
                         <VBox.margin><Insets top="4"/></VBox.margin>
                     </Label>
 
-                    <Label text="Complete a quiz to see your stats here."
-                           styleClass="text-muted"
-                           wrapText="true">
+                    <TextArea text="Complete a quiz to see your stats here."
+                              styleClass="card-desc-text"
+                              editable="false"
+                              wrapText="true"
+                              prefHeight="45"
+                              maxWidth="Infinity">
                         <VBox.margin><Insets top="8"/></VBox.margin>
-                    </Label>
+                    </TextArea>
 
                     <Region VBox.vgrow="ALWAYS"/>
 
@@ -132,9 +141,12 @@
             <VBox styleClass="dashboard-tip-card" spacing="6">
                 <padding><Insets top="14" right="20" bottom="14" left="20"/></padding>
                 <Label text="HOW IT WORKS" styleClass="dashboard-tip-label"/>
-                <Label text="Click &quot;Select Difficulty&quot; to choose Easy, Medium, or Hard → Answer 5 randomized questions → View your results and track your progress."
-                       styleClass="text-muted"
-                       wrapText="true"/>
+                <TextArea text="Click &quot;Select Difficulty&quot; to choose Easy, Medium, or Hard → Answer 5 randomized questions → View your results and track your progress."
+                          styleClass="card-desc-text"
+                          editable="false"
+                          wrapText="true"
+                          prefHeight="40"
+                          maxWidth="Infinity"/>
             </VBox>
 
             <!-- Footer -->

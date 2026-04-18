@@ -9,6 +9,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.Region?>
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TextArea?>
 
 <BorderPane
         xmlns:fx="http://javafx.com/fxml"
@@ -55,14 +56,16 @@
             <HBox alignment="TOP_LEFT" spacing="18" fillHeight="true">
 
                 <!-- Easy Card -->
-                <VBox styleClass="card, card-easy" spacing="12" prefWidth="224" alignment="TOP_LEFT">
+                <VBox styleClass="card, card-easy" spacing="12" HBox.hgrow="ALWAYS" alignment="TOP_LEFT">
                     <padding><Insets top="24" right="22" bottom="24" left="22"/></padding>
                     <Label text="Easy"      styleClass="text-diff-title, diff-easy"/>
                     <Label text="Beginner"  styleClass="badge, badge-easy"/>
-                    <Label
+                    <TextArea
                             text="Perfect for getting started. Covers basic concepts and fundamental operations."
-                            styleClass="text-muted, card-desc"
+                            styleClass="card-desc-text"
+                            editable="false"
                             wrapText="true"
+                            prefHeight="60"
                             maxWidth="Infinity"/>
                     <VBox spacing="3">
                         <Label text="TOPICS"                       styleClass="text-topics-label"/>
@@ -80,14 +83,17 @@
                 </VBox>
 
                 <!-- Medium Card -->
-                <VBox styleClass="card, card-medium" spacing="12" prefWidth="224" alignment="TOP_LEFT">
+                <VBox styleClass="card, card-medium" spacing="12" HBox.hgrow="ALWAYS" alignment="TOP_LEFT">
                     <padding><Insets top="24" right="22" bottom="24" left="22"/></padding>
                     <Label text="Medium"       styleClass="text-diff-title, diff-medium"/>
                     <Label text="Intermediate" styleClass="badge, badge-medium"/>
-                    <Label
+                    <TextArea
                             text="For those building confidence. Covers more complex structures and common algorithms."
-                            styleClass="text-muted, card-desc"
-                            wrapText="true"/>
+                            styleClass="card-desc-text"
+                            editable="false"
+                            wrapText="true"
+                            prefHeight="60"
+                            maxWidth="Infinity"/>
                     <VBox spacing="3">
                         <Label text="TOPICS"                 styleClass="text-topics-label"/>
                         <Label text="Queues, Trees, Sorting" styleClass="text-topics-value"/>
@@ -104,14 +110,17 @@
                 </VBox>
 
                 <!-- Hard Card -->
-                <VBox styleClass="card, card-hard" spacing="12" prefWidth="224" alignment="TOP_LEFT">
+                <VBox styleClass="card, card-hard" spacing="12" HBox.hgrow="ALWAYS" alignment="TOP_LEFT">
                     <padding><Insets top="24" right="22" bottom="24" left="22"/></padding>
                     <Label text="Hard"     styleClass="text-diff-title, diff-hard"/>
                     <Label text="Advanced" styleClass="badge, badge-hard"/>
-                    <Label
+                    <TextArea
                             text="Challenge yourself with advanced topics and tricky edge cases."
-                            styleClass="text-muted, card-desc"
-                            wrapText="true"/>
+                            styleClass="card-desc-text"
+                            editable="false"
+                            wrapText="true"
+                            prefHeight="60"
+                            maxWidth="Infinity"/>
                     <VBox spacing="3">
                         <Label text="TOPICS"                  styleClass="text-topics-label"/>
                         <Label text="Graphs, Hash Tables, DP" styleClass="text-topics-value"/>

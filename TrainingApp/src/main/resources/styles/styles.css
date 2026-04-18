@@ -3,25 +3,12 @@
    styles/styles.css
    ========================================= */
 
-/* ---------- ROOT COLORS ---------- */
-/* Background:    #1E1E2E  (dark page bg)   */
-/* Card:          #2A2A3E  (elevated card)  */
-/* Border:        #364153  (card border)    */
-/* Input bg:      #1E1E2E  (same as page)   */
-/* Input border:  #4A5565                   */
-/* Primary btn:   #3B82F6  (blue)           */
-/* Text white:    #FFFFFF                   */
-/* Text muted:    #99A1AF                   */
-/* Text placeholder: #6A7282               */
-/* Link/accent:   #3B82F6                   */
-
 /* ---------- ROOT SCENE ---------- */
 .root {
     -fx-background-color: #1E1E2E;
-    -fx-font-family: "Inter", "System";
+    -fx-font-family: "Segoe UI", "Helvetica Neue", "Arial", "System";
 }
 
-/* ---------- SCREEN WRAPPER ---------- */
 .screen-root {
     -fx-background-color: #1E1E2E;
 }
@@ -46,6 +33,7 @@
 .text-subtitle {
     -fx-font-size: 14px;
     -fx-text-fill: #99A1AF;
+    -fx-wrap-text: true;
 }
 
 .text-heading {
@@ -57,6 +45,7 @@
 .text-muted {
     -fx-font-size: 13px;
     -fx-text-fill: #99A1AF;
+    -fx-wrap-text: true;
 }
 
 .text-link {
@@ -122,10 +111,9 @@
 
 .loading-dot-inactive {
     -fx-fill: #595973;
-
 }
 
-/* ---------- PERFORMANCE DASHBOARD(jeremy) ---------- */
+/* ---------- PERFORMANCE DASHBOARD (jeremy) ---------- */
 .performance-dashboard-root {
     -fx-background-color: #F4F6F9;
 }
@@ -288,8 +276,7 @@
     -fx-alignment: CENTER;
 }
 
-/* ---------- DIFFICULTY SCENE---------- */
-
+/* ---------- DIFFICULTY SCENE (matt) ---------- */
 .diff-navbar {
     -fx-background-color: #1A2233;
     -fx-pref-height: 56px;
@@ -306,7 +293,6 @@
     -fx-text-fill: #FFFFFF;
 }
 
-/* "< Back" button in nav */
 .diff-nav-back {
     -fx-background-color: #2D3F5E;
     -fx-background-radius: 8;
@@ -317,15 +303,14 @@
     -fx-border-width: 0;
     -fx-padding: 7 16 7 16;
 }
+
 .diff-nav-back:hover   { -fx-background-color: #3B4F72; }
 .diff-nav-back:pressed { -fx-background-color: #243B5E; }
 
-/* Content area background */
 .diff-content-area {
     -fx-background-color: #F0F2F7;
 }
 
-/* Difficulty title */
 .text-diff-title {
     -fx-font-size: 22px;
     -fx-font-weight: bold;
@@ -338,6 +323,7 @@
 .card-desc {
     -fx-font-size: 13px;
     -fx-text-fill: #737D8C;
+    -fx-wrap-text: true;
 }
 
 .text-topics-label {
@@ -352,7 +338,6 @@
     -fx-text-fill: #1E1E2E;
 }
 
-/* Badges */
 .badge {
     -fx-background-radius: 20;
     -fx-font-size: 11px;
@@ -364,7 +349,6 @@
 .badge-medium { -fx-background-color: rgba(245,158,11,0.15); -fx-text-fill: #F59E0B; }
 .badge-hard   { -fx-background-color: rgba(239,68,68,0.15);  -fx-text-fill: #EF4444; }
 
-/* Colour-coded select buttons */
 .btn-easy {
     -fx-background-color: #22C55E;
     -fx-background-radius: 10;
@@ -375,6 +359,7 @@
     -fx-cursor: hand;
     -fx-border-width: 0;
 }
+
 .btn-easy:hover   { -fx-background-color: #16A34A; }
 .btn-easy:pressed { -fx-background-color: #15803D; }
 
@@ -388,6 +373,7 @@
     -fx-cursor: hand;
     -fx-border-width: 0;
 }
+
 .btn-medium:hover   { -fx-background-color: #D97706; }
 .btn-medium:pressed { -fx-background-color: #B45309; }
 
@@ -401,6 +387,7 @@
     -fx-cursor: hand;
     -fx-border-width: 0;
 }
+
 .btn-hard:hover   { -fx-background-color: #DC2626; }
 .btn-hard:pressed { -fx-background-color: #B91C1C; }
 
@@ -428,15 +415,13 @@
     -fx-background-radius: 14;
 }
 
-/* Heading used on difficulty screen */
 .text-heading-lg {
     -fx-font-size: 26px;
     -fx-font-weight: bold;
     -fx-text-fill: #1E1E2E;
 }
 
-/* ---------- RESULT SCENE---------- */
-/* Light grey page background */
+/* ---------- RESULT SCENE (matt) ---------- */
 .results-screen-root {
     -fx-background-color: #F0F2F7;
 }
@@ -445,7 +430,6 @@
     -fx-background-color: #F0F2F7;
 }
 
-/* Nav bar stays dark to match the rest of the app */
 .results-navbar {
     -fx-background-color: #1A2233;
     -fx-pref-height: 56px;
@@ -462,7 +446,6 @@
     -fx-text-fill: #FFFFFF;
 }
 
-/* "Quiz Complete ✓" green pill in the nav */
 .results-nav-badge {
     -fx-background-color: #16A34A;
     -fx-background-radius: 20;
@@ -477,7 +460,6 @@
     -fx-text-fill: #4ADE80;
 }
 
-/* Page heading */
 .results-page-title {
     -fx-font-size: 26px;
     -fx-font-weight: bold;
@@ -489,7 +471,6 @@
     -fx-text-fill: #6B7280;
 }
 
-/* White score card with light shadow */
 .results-card {
     -fx-background-color: #FFFFFF;
     -fx-background-radius: 12;
@@ -497,27 +478,23 @@
     -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.08), 16, 0, 0, 4);
 }
 
-/* Blue top stripe on the card */
 .results-card-stripe {
     -fx-background-color: #3B82F6;
     -fx-background-radius: 12 12 0 0;
 }
 
-/* "FINAL SCORE" small caps label */
 .results-final-label {
     -fx-font-size: 11px;
     -fx-font-weight: bold;
     -fx-text-fill: #3B82F6;
 }
 
-/* Big score number e.g. "4" */
 .results-score-big {
     -fx-font-size: 72px;
     -fx-font-weight: bold;
     -fx-text-fill: #111827;
 }
 
-/* "/ 5" denominator next to big score */
 .results-score-denom {
     -fx-font-size: 32px;
     -fx-font-weight: bold;
@@ -525,32 +502,28 @@
     -fx-padding: 0 0 12 0;
 }
 
-/* Thin horizontal divider inside card */
 .results-divider {
     -fx-background-color: #E5E7EB;
 }
 
-/* "4 of 5" / "80%" stat values */
 .results-stat-value {
-    -fx-font-size: 20px;
+    -fx-font-size: 18px;
     -fx-font-weight: bold;
     -fx-text-fill: #3B82F6;
+    -fx-padding: 0 12 0 0;
 }
 
-/* "Correct Answers" / "Accuracy" labels */
 .results-stat-label {
     -fx-font-size: 12px;
     -fx-text-fill: #6B7280;
 }
 
-/* Pass/fail message at bottom of card — colour set in controller */
 .results-message {
     -fx-font-size: 14px;
     -fx-font-weight: bold;
     -fx-text-fill: #16A34A;
 }
 
-/* Play Again — solid blue */
 .results-btn-play {
     -fx-background-color: #3B82F6;
     -fx-background-radius: 10;
@@ -560,10 +533,10 @@
     -fx-cursor: hand;
     -fx-border-width: 0;
 }
+
 .results-btn-play:hover   { -fx-background-color: #2563EB; }
 .results-btn-play:pressed { -fx-background-color: #1D4ED8; }
 
-/* Back to Home — outlined */
 .results-btn-home {
     -fx-background-color: #FFFFFF;
     -fx-background-radius: 10;
@@ -575,10 +548,10 @@
     -fx-font-weight: bold;
     -fx-cursor: hand;
 }
+
 .results-btn-home:hover   { -fx-background-color: #F9FAFB; -fx-border-color: #9CA3AF; }
 .results-btn-home:pressed { -fx-background-color: #F3F4F6; }
 
-/* Footer text at bottom of results page */
 .results-footer {
     -fx-font-size: 12px;
     -fx-text-fill: #9CA3AF;
@@ -664,4 +637,144 @@
     -fx-font-size: 12px;
     -fx-font-weight: bold;
     -fx-text-fill: #3B82F6;
+}
+
+/* ---------- QUIZ SCREEN (justin) ---------- */
+.quiz-counter-label {
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #737D8C;
+}
+
+.quiz-progress-track {
+    -fx-fill: #E0E4EA;
+}
+
+.quiz-progress-fill {
+    -fx-fill: #3B82F6;
+}
+
+.quiz-question-card {
+    -fx-background-color: white;
+    -fx-background-radius: 14;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.07), 16, 0, 0, 4);
+}
+
+.quiz-question-accent {
+    -fx-background-color: #3B82F6;
+    -fx-background-radius: 14 0 0 14;
+}
+
+.quiz-question-label {
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #3B82F6;
+}
+
+.quiz-question-text {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1E1E2E;
+}
+
+.quiz-topic-tag {
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #3B82F6;
+    -fx-background-color: rgba(59, 130, 246, 0.08);
+    -fx-background-radius: 20;
+    -fx-padding: 4 12 4 12;
+}
+
+.quiz-answer-btn {
+    -fx-background-color: white;
+    -fx-border-color: #E0E4EA;
+    -fx-border-width: 1.5;
+    -fx-border-radius: 12;
+    -fx-background-radius: 12;
+    -fx-text-fill: #1E1E2E;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.05), 8, 0, 0, 2);
+    -fx-alignment: CENTER-LEFT;
+    -fx-padding: 0 0 0 16;
+}
+
+.quiz-answer-btn:hover {
+    -fx-border-color: #3B82F6;
+    -fx-background-color: rgba(59, 130, 246, 0.04);
+}
+
+.quiz-answer-selected {
+    -fx-border-color: #3B82F6;
+    -fx-border-width: 2;
+    -fx-background-color: rgba(59, 130, 246, 0.08);
+    -fx-text-fill: #3B82F6;
+}
+
+.quiz-bottom-bar {
+    -fx-background-color: white;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.06), 12, 0, 0, -2);
+}
+
+.quiz-back-btn {
+    -fx-background-color: #F4F6F9;
+    -fx-border-color: #E0E4EA;
+    -fx-border-width: 1.5;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-text-fill: #737D8C;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-pref-height: 40px;
+    -fx-cursor: hand;
+}
+
+.quiz-index-label {
+    -fx-font-size: 12px;
+    -fx-text-fill: #99A1AF;
+}
+
+.quiz-badge-easy {
+    -fx-background-color: rgba(34, 197, 94, 0.15);
+    -fx-background-radius: 20;
+    -fx-text-fill: #22C55E;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-padding: 4 12 4 12;
+}
+
+.quiz-badge-medium {
+    -fx-background-color: rgba(245, 158, 11, 0.15);
+    -fx-background-radius: 20;
+    -fx-text-fill: #F59E0B;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-padding: 4 12 4 12;
+}
+
+.quiz-badge-hard {
+    -fx-background-color: rgba(239, 68, 68, 0.15);
+    -fx-background-radius: 20;
+    -fx-text-fill: #EF4444;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-padding: 4 12 4 12;
+}
+
+/* ---------- TEXT AREA (wrapping label fix) ---------- */
+.card-desc-text {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-text-fill: #737D8C;
+    -fx-font-size: 13px;
+    -fx-padding: 0;
+    -fx-background-insets: 0;
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+
+.card-desc-text .content {
+    -fx-background-color: transparent;
 }

@@ -10,8 +10,8 @@ public class MainApp extends Application {
     @Override
     public void start(Stage stage) throws Exception {
         FXMLLoader fxmlLoader = new FXMLLoader(
-                MainApp.class.getResource("/views/home-dashboard-view.fxml")
-                //TODO change back to splash-view.fxml when group is done this week
+                MainApp.class.getResource("/views/splash-view.fxml")
+                //TODO this is the correct entry point for production or for test: home-dashboard
         );
 
         Scene scene = new Scene(fxmlLoader.load(), 800, 600);

@@ -29,8 +29,8 @@ public class DifficultyController {
     //Back button → return to Login
     @FXML
     private void handleBack() {
-        navigateToFxml("/views/login-view.fxml");
-        // TODO: change to home-dashboard-view.fxml (@matt)
+        navigateToFxml("/views/home-dashboard-view.fxml");
+        //navigates back to home-dashboard
     }
 
     //Navigation helpers

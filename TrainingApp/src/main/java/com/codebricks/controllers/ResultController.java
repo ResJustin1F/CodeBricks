@@ -29,6 +29,11 @@ public class ResultController {
         this.currentDiff = diff;
         this.totalQuestions = questions;
 
+        accuracyLabel.setMinWidth(150);
+        accuracyLabel.setPrefWidth(150);
+        correctLabel.setMinWidth(150);
+        correctLabel.setPrefWidth(150);
+
         int acc = (int) Math.round((score / (double) questions) * 100);
 
         subtitleLabel.setText(
@@ -74,8 +79,7 @@ public class ResultController {
 
     @FXML
     private void handleHome() {
-        navigateToFxml("/views/login-view.fxml", false);
-        // TODO: change to home-dashboard-view.fxml (@matt)
+        navigateToFxml("/views/home-dashboard-view.fxml", false);
     }
 
     private void navigateToFxml(String fxmlPath, boolean isQuiz) {
