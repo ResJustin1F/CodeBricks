@@ -13,7 +13,6 @@ public class MainApp extends Application {
         DatabaseManager.connect();
         FXMLLoader fxmlLoader = new FXMLLoader(
                 MainApp.class.getResource("/views/splash-view.fxml")
-                //TODO this is the correct entry point for production or for test: home-dashboard
         );
 
         Scene scene = new Scene(fxmlLoader.load(), 800, 600);

@@ -47,7 +47,16 @@ public class RegistrationController {
         boolean success = auth.register(email, password);
 
         if (success) {
-            navigateTo("/views/login-view.fxml");
+            showError("Registration successful. Please log in.");
+            errorLabel.setStyle("-fx-text-fill: #22C55E; -fx-font-size: 13px;");
+            new Thread(() -> {
+                try {
+                    Thread.sleep(1500);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+                javafx.application.Platform.runLater(() -> navigateTo("/views/login-view.fxml"));
+            }).start();
         }else{
             showError("An account with that email address already exists.");
         }
