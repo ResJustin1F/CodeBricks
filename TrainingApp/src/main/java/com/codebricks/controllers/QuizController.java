@@ -11,6 +11,8 @@ import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.scene.shape.Rectangle;
 import javafx.stage.Stage;
+import com.codebricks.services.QuizResultService;
+import com.codebricks.services.SessionManager;
 
 import java.util.List;
 
@@ -157,8 +159,11 @@ public class QuizController {
             loadQuestion();
         }
     }
-
     private void navigateToResults() {
+
+        QuizResultService resultService = new QuizResultService();
+        resultService.saveResult(SessionManager.getEmail(), currentDifficulty, score, questions.size(), score);
+
         try {
             FXMLLoader loader = new FXMLLoader(
                     getClass().getResource("/views/result-view.fxml")
