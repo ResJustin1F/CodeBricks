@@ -1,6 +1,7 @@
 package com.codebricks.controllers;
 
 import com.codebricks.services.AuthService;
+import com.codebricks.services.SessionManager;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -29,6 +30,7 @@ public class LoginController {
         boolean success = auth.login(email, password);
 
         if (success) {
+            SessionManager.set(email);
             navigateTo("/views/home-dashboard-view.fxml");
         } else {
             showError("Invalid email or password.");

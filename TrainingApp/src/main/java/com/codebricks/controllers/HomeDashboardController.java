@@ -1,6 +1,7 @@
 
 package com.codebricks.controllers;
 
+import com.codebricks.services.SessionManager;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -17,7 +18,7 @@ public class HomeDashboardController {
     @FXML
     public void initialize() {
         // TODO: replace with real username from session when auth is wired up
-        welcomeLabel.setText("Welcome, User");
+        welcomeLabel.setText("Welcome, User" + SessionManager.getEmail());
 
         // TODO: replace with real quiz count from MongoDB when backend is ready
         quizCountLabel.setText("0");
@@ -35,6 +36,7 @@ public class HomeDashboardController {
 
     @FXML
     private void handleLogout() {
+        SessionManager.clear();
         navigateTo("/views/login-view.fxml");
     }
 
