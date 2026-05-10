@@ -18,7 +18,7 @@ public class HomeDashboardController {
     @FXML
     public void initialize() {
         // TODO: replace with real username from session when auth is wired up
-        welcomeLabel.setText("Welcome, User" + SessionManager.getEmail());
+        welcomeLabel.setText("Welcome, " + SessionManager.getEmail());
 
         // TODO: replace with real quiz count from MongoDB when backend is ready
         quizCountLabel.setText("0");
