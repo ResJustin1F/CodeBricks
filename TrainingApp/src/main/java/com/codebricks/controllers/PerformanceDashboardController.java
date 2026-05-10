@@ -76,7 +76,7 @@ public class PerformanceDashboardController {
         ObservableList<QuizSessionRow> rows = FXCollections.observableArrayList();
 
         for (Document doc : recent) {
-            String date = doc.getString("timestamp");
+            String date = doc.get("timestamp").toString();
             String difficulty = doc.getString("difficulty");
             String score = String.valueOf(doc.getInteger("score", 0));
             rows.add(new QuizSessionRow(date, difficulty, score));
