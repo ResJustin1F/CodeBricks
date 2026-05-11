@@ -25,9 +25,9 @@ public class DatabaseManager {
             mongoClient = MongoClients.create(uri);
             database    = mongoClient.getDatabase(name);
 
-            System.out.println("MongoDB connected: " + name);
+
         } catch (Exception e) {
-            System.err.println("Failed to connect to MongoDB: " + e.getMessage());
+            throw new RuntimeException("Failed to connect to MongoDB: " + e.getMessage());
         }
     }
 
@@ -40,7 +40,7 @@ public class DatabaseManager {
     public static void close() {
         if (mongoClient != null) {
             mongoClient.close();
-            System.out.println("MongoDB connection closed.");
+
         }
     }
 }

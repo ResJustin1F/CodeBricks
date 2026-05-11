@@ -7,8 +7,6 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.layout.BorderPane;
-import javafx.scene.layout.HBox;
-import javafx.scene.layout.VBox;
 import javafx.scene.shape.Rectangle;
 import javafx.stage.Stage;
 import com.codebricks.services.QuizResultService;
@@ -45,6 +43,7 @@ public class QuizController {
     private List<QuizService.Question> questions;
     private int currentIndex = 0;
     private int score = 0;
+    private String[] userAnswers;
     private String selectedAnswer = null;
     private String currentDifficulty;
 
@@ -72,12 +71,12 @@ public class QuizController {
         questions = service.getQuestions(difficulty);
 
         if (questions.isEmpty()) {
-            System.err.println("QuizController: no questions loaded for difficulty: " + difficulty);
             return;
         }
 
         currentIndex = 0;
         score = 0;
+        userAnswers = new String[questions.size()];
         loadQuestion();
     }
 
@@ -132,10 +131,8 @@ public class QuizController {
     private void handleNext() {
         if (selectedAnswer == null) return; // force selection before advancing
 
-        // Check if correct
-        if (selectedAnswer.equals(questions.get(currentIndex).correctAnswer)) {
-            score++;
-        }
+        //SCORE
+        userAnswers[currentIndex] = selectedAnswer;
 
         if (currentIndex < questions.size() - 1) {
             currentIndex++;
@@ -161,6 +158,13 @@ public class QuizController {
     }
     private void navigateToResults() {
 
+        //Calculate Score
+        score = 0;
+        for (int i = 0; i < questions.size(); i++) {
+            if (userAnswers[i] != null && userAnswers[i].equals(questions.get(i).correctAnswer)) {
+                score++;
+            }
+        }
         QuizResultService resultService = new QuizResultService();
         resultService.saveResult(SessionManager.getEmail(), currentDifficulty, score, questions.size(), score);
 
