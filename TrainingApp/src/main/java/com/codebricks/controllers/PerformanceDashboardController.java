@@ -12,6 +12,10 @@ import javafx.scene.control.TableCell;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.stage.Stage;
+import com.codebricks.services.PerformanceService;
+import com.codebricks.services.SessionManager;
+import org.bson.Document;
+import java.util.List;
 
 public class PerformanceDashboardController {
 
@@ -65,7 +69,28 @@ public class PerformanceDashboardController {
         });
 
         quizHistoryTable.setItems(quizHistory);
-        showEmptyState();
+        String userId = SessionManager.getEmail();
+        PerformanceService service = new PerformanceService();
+
+        List<Document> recent = service.getRecentResults(userId);
+        ObservableList<QuizSessionRow> rows = FXCollections.observableArrayList();
+
+        for (Document doc : recent) {
+            String date = doc.get("timestamp").toString();
+            String difficulty = doc.getString("difficulty");
+            String score = String.valueOf(doc.getInteger("score", 0));
+            rows.add(new QuizSessionRow(date, difficulty, score));
+        }
+
+        if (rows.isEmpty()) {
+            showEmptyState();
+        } else {
+            setQuizHistory(rows);
+            setSummary(
+                    String.valueOf(service.getTotalQuizzes(userId)),
+                    service.getBestScore(userId) + "/5"
+            );
+        }
     }
 
     public void showEmptyState() {

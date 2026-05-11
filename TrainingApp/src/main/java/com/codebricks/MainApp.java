@@ -1,5 +1,6 @@
 package com.codebricks;
 
+import com.codebricks.services.DatabaseManager;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -9,9 +10,9 @@ public class MainApp extends Application {
 
     @Override
     public void start(Stage stage) throws Exception {
+        DatabaseManager.connect();
         FXMLLoader fxmlLoader = new FXMLLoader(
                 MainApp.class.getResource("/views/splash-view.fxml")
-                //TODO this is the correct entry point for production or for test: home-dashboard
         );
 
         Scene scene = new Scene(fxmlLoader.load(), 800, 600);
@@ -25,6 +26,10 @@ public class MainApp extends Application {
         stage.setResizable(false);
         stage.setScene(scene);
         stage.show();
+    }
+    @Override
+    public void stop() {
+        DatabaseManager.close();
     }
 
     public static void main(String[] args) {

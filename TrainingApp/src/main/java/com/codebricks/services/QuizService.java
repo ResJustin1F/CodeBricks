@@ -31,7 +31,6 @@ public class QuizService {
 
     /**
      * Loads 5 randomized questions matching the given difficulty from questions.json
-     * TODO: replace with MongoDB query when backend is ready
      */
     public List<Question> getQuestions(String difficulty) {
         List<Question> all = new ArrayList<>();

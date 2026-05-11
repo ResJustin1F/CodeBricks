@@ -1,5 +1,6 @@
 package com.codebricks.controllers;
 
+import com.codebricks.services.AuthService;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -42,10 +43,23 @@ public class RegistrationController {
             return;
         }
 
-        // TODO: Replace with AuthService.register(email, password) when MongoDB is ready
-        showError("");
-        System.out.println("Registration attempted: " + email);
-        showError("Registration backend not connected yet.");
+        AuthService auth = new AuthService();
+        boolean success = auth.register(email, password);
+
+        if (success) {
+            showError("Registration successful. Please log in.");
+            errorLabel.setStyle("-fx-text-fill: #22C55E; -fx-font-size: 13px;");
+            new Thread(() -> {
+                try {
+                    Thread.sleep(1500);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+                javafx.application.Platform.runLater(() -> navigateTo("/views/login-view.fxml"));
+            }).start();
+        }else{
+            showError("An account with that email address already exists.");
+        }
     }
 
     @FXML

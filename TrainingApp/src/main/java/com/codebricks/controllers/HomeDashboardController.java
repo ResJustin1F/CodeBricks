@@ -1,12 +1,17 @@
 
 package com.codebricks.controllers;
 
+import com.codebricks.services.SessionManager;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
+import com.codebricks.services.DatabaseManager;
+import com.mongodb.client.MongoCollection;
+import com.mongodb.client.model.Filters;
+import org.bson.Document;
 
 public class HomeDashboardController {
 
@@ -16,11 +21,13 @@ public class HomeDashboardController {
 
     @FXML
     public void initialize() {
-        // TODO: replace with real username from session when auth is wired up
-        welcomeLabel.setText("Welcome, User");
+        //USERNAME
+        welcomeLabel.setText("Welcome, " + SessionManager.getEmail());
 
-        // TODO: replace with real quiz count from MongoDB when backend is ready
-        quizCountLabel.setText("0");
+        //QUIZ COUNT
+        MongoCollection<Document> results = DatabaseManager.getDatabase().getCollection("QuizResults");
+        long count = results.countDocuments(Filters.eq("userId", SessionManager.getEmail()));
+        quizCountLabel.setText(String.valueOf(count));
     }
 
     @FXML
@@ -35,6 +42,7 @@ public class HomeDashboardController {
 
     @FXML
     private void handleLogout() {
+        SessionManager.clear();
         navigateTo("/views/login-view.fxml");
     }
 

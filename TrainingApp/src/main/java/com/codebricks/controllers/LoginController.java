@@ -1,5 +1,7 @@
 package com.codebricks.controllers;
 
+import com.codebricks.services.AuthService;
+import com.codebricks.services.SessionManager;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -24,8 +26,15 @@ public class LoginController {
             return;
         }
 
-        // TODO: wire up AuthService.login(email, password) when MongoDB is ready
-        showError("Login backend not connected yet.");
+        AuthService auth = new AuthService();
+        boolean success = auth.login(email, password);
+
+        if (success) {
+            SessionManager.set(email);
+            navigateTo("/views/home-dashboard-view.fxml");
+        } else {
+            showError("Invalid email or password.");
+        }
     }
 
     @FXML
