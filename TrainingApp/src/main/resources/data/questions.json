@@ -964,7 +964,7 @@
     "options": [
       "0",
       "1",
-      "No default value",
+      "No value",
       "-1"
     ],
     "correctAnswer": "0",
