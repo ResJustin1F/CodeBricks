@@ -78,7 +78,7 @@ CodeBricks follows an MVC pattern - FXML views paired with Java controllers, bac
 **Performance Dashboard**  
 ![Performance Dashboard](TrainingApp/src/main/resources/images/image7.png)
 
-**Figma Hi-Fi Prototypes:** https://www.figma.com/design/V52i1hBeMC912bMGD7lmBN/Potential-Code-Brick-Figma
+**Figma Prototype:** https://www.figma.com/design/V52i1hBeMC912bMGD7lmBN/Potential-Code-Brick-Figma
 
 ---
 
@@ -87,7 +87,8 @@ CodeBricks follows an MVC pattern - FXML views paired with Java controllers, bac
 **Prerequisites**
 - Java
 - Maven
-- IntelliJ IDEA
+- JavaFx
+
 
 ```bash
 git clone https://github.com/ResJustin1F/CodeBricks.git
@@ -117,7 +118,7 @@ The application expects two collections: `Users` and `QuizResults`.
 Developed across 3 sprints using Agile/Scrum with a GitHub Kanban board, weekly standups, and sprint-based tickets.
 
 **Sprint 1 - LoFi Prototypes and Project Proposal**
-- Defined requirements (IEEE SRS), created LoFi wireframes, set up repo and branch strategy
+- Defined requirements (IEEE SRS), created LoFi wireframes, created Figma protoype, and set up repo and branch strategy
 
 **Sprint 2 - Frontend with No Logic**
 - Built all 8 FXML screens, global stylesheet, and navigation pattern
