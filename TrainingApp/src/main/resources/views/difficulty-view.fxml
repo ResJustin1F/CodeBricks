@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TextArea?>
+
+<BorderPane
+        xmlns:fx="http://javafx.com/fxml"
+        fx:id="rootPane"
+        fx:controller="com.codebricks.controllers.DifficultyController"
+        styleClass="screen-root"
+        prefWidth="800"
+        prefHeight="600">
+
+    <!-- ══ TOP NAV BAR ══════════════════════════════════════════════════════ -->
+    <top>
+        <HBox styleClass="diff-navbar" alignment="CENTER_LEFT" prefHeight="56">
+            <padding><Insets left="24" right="24"/></padding>
+
+            <!-- Left: icon + wordmark -->
+            <HBox alignment="CENTER_LEFT" spacing="10" HBox.hgrow="ALWAYS">
+                <Label text="⊞" styleClass="diff-nav-icon"/>
+                <Label text="CodeBricks" styleClass="diff-nav-title"/>
+            </HBox>
+
+            <!-- Right: Back button -->
+            <Button
+                    text="&lt; Back"
+                    styleClass="diff-nav-back"
+                    onAction="#handleBack"/>
+        </HBox>
+    </top>
+
+    <!-- ══ MAIN CONTENT ═════════════════════════════════════════════════════ -->
+    <center>
+        <VBox alignment="TOP_LEFT" spacing="28" styleClass="diff-content-area">
+            <padding><Insets top="40" left="52" right="52" bottom="40"/></padding>
+
+            <!-- ── Page Heading (left-aligned) ── -->
+            <VBox spacing="6">
+                <Label text="Choose Your Difficulty" styleClass="text-heading-lg"/>
+                <Label
+                        text="Select a difficulty level to begin your quiz session. Each level tests different depths of knowledge."
+                        styleClass="text-subtitle"
+                        wrapText="true"/>
+            </VBox>
+
+            <!-- ── Cards Row ── -->
+            <HBox alignment="TOP_LEFT" spacing="18" fillHeight="true">
+
+                <!-- Easy Card -->
+                <VBox styleClass="card, card-easy" spacing="12" HBox.hgrow="ALWAYS" alignment="TOP_LEFT">
+                    <padding><Insets top="24" right="22" bottom="24" left="22"/></padding>
+                    <Label text="Easy"      styleClass="text-diff-title, diff-easy"/>
+                    <Label text="Beginner"  styleClass="badge, badge-easy"/>
+                    <TextArea
+                            text="Perfect for getting started. Covers basic concepts and fundamental operations."
+                            styleClass="card-desc-text"
+                            editable="false"
+                            wrapText="true"
+                            prefHeight="60"
+                            maxWidth="Infinity"/>
+                    <VBox spacing="3">
+                        <Label text="TOPICS"                       styleClass="text-topics-label"/>
+                        <Label text="Arrays, Linked Lists, Stacks" styleClass="text-topics-value"/>
+                    </VBox>
+                    <Label text="5 Questions" styleClass="text-muted"/>
+                    <Region VBox.vgrow="ALWAYS"/>
+                    <Button
+                            text="Select Easy"
+                            styleClass="btn-easy"
+                            maxWidth="Infinity"
+                            onAction="#handleEasy">
+                        <VBox.margin><Insets top="8"/></VBox.margin>
+                    </Button>
+                </VBox>
+
+                <!-- Medium Card -->
+                <VBox styleClass="card, card-medium" spacing="12" HBox.hgrow="ALWAYS" alignment="TOP_LEFT">
+                    <padding><Insets top="24" right="22" bottom="24" left="22"/></padding>
+                    <Label text="Medium"       styleClass="text-diff-title, diff-medium"/>
+                    <Label text="Intermediate" styleClass="badge, badge-medium"/>
+                    <TextArea
+                            text="For those building confidence. Covers more complex structures and common algorithms."
+                            styleClass="card-desc-text"
+                            editable="false"
+                            wrapText="true"
+                            prefHeight="60"
+                            maxWidth="Infinity"/>
+                    <VBox spacing="3">
+                        <Label text="TOPICS"                 styleClass="text-topics-label"/>
+                        <Label text="Queues, Trees, Sorting" styleClass="text-topics-value"/>
+                    </VBox>
+                    <Label text="5 Questions" styleClass="text-muted"/>
+                    <Region VBox.vgrow="ALWAYS"/>
+                    <Button
+                            text="Select Medium"
+                            styleClass="btn-medium"
+                            maxWidth="Infinity"
+                            onAction="#handleMedium">
+                        <VBox.margin><Insets top="8"/></VBox.margin>
+                    </Button>
+                </VBox>
+
+                <!-- Hard Card -->
+                <VBox styleClass="card, card-hard" spacing="12" HBox.hgrow="ALWAYS" alignment="TOP_LEFT">
+                    <padding><Insets top="24" right="22" bottom="24" left="22"/></padding>
+                    <Label text="Hard"     styleClass="text-diff-title, diff-hard"/>
+                    <Label text="Advanced" styleClass="badge, badge-hard"/>
+                    <TextArea
+                            text="Challenge yourself with advanced topics and tricky edge cases."
+                            styleClass="card-desc-text"
+                            editable="false"
+                            wrapText="true"
+                            prefHeight="60"
+                            maxWidth="Infinity"/>
+                    <VBox spacing="3">
+                        <Label text="TOPICS"                  styleClass="text-topics-label"/>
+                        <Label text="Graphs, Hash Tables, DP" styleClass="text-topics-value"/>
+                    </VBox>
+                    <Label text="5 Questions" styleClass="text-muted"/>
+                    <Region VBox.vgrow="ALWAYS"/>
+                    <Button
+                            text="Select Hard"
+                            styleClass="btn-hard"
+                            maxWidth="Infinity"
+                            onAction="#handleHard">
+                        <VBox.margin><Insets top="8"/></VBox.margin>
+                    </Button>
+                </VBox>
+
+            </HBox>
+
+            <!-- ── Footer Note ── -->
+            <HBox alignment="CENTER" maxWidth="Infinity">
+                <Label
+                        text="All quizzes consist of 5 randomized multiple choice questions pulled from the database."
+                        styleClass="text-muted"
+                        wrapText="true"/>
+            </HBox>
+
+            <HBox alignment="CENTER" maxWidth="Infinity">
+                <Label
+                        text="CodeBricks  ·  Farmingdale State College  ·  CSC325"
+                        styleClass="results-footer"
+                        maxWidth="Infinity"
+                        alignment="CENTER"/>
+            </HBox>
+
+        </VBox>
+    </center>
+
+</BorderPane>

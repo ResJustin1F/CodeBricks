@@ -1,0 +1,38 @@
+package com.codebricks;
+
+import com.codebricks.services.DatabaseManager;
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
+
+public class MainApp extends Application {
+
+    @Override
+    public void start(Stage stage) throws Exception {
+        DatabaseManager.connect();
+        FXMLLoader fxmlLoader = new FXMLLoader(
+                MainApp.class.getResource("/views/splash-view.fxml")
+        );
+
+        Scene scene = new Scene(fxmlLoader.load(), 800, 600);
+
+        //Load global stylesheet
+        scene.getStylesheets().add(
+                MainApp.class.getResource("/styles/styles.css").toExternalForm()
+        );
+
+        stage.setTitle("CodeBricks");
+        stage.setResizable(false);
+        stage.setScene(scene);
+        stage.show();
+    }
+    @Override
+    public void stop() {
+        DatabaseManager.close();
+    }
+
+    public static void main(String[] args) {
+        launch();
+    }
+}

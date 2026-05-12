@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.geometry.Insets?>
+
+<BorderPane
+        xmlns:fx="http://javafx.com/fxml"
+        fx:id="rootPane"
+        fx:controller="com.codebricks.controllers.ResultController"
+        styleClass="results-screen-root"
+        prefWidth="800"
+        prefHeight="600">
+
+    <!-- ══ TOP NAV BAR ══════════════════════════════════════════════════════ -->
+    <top>
+        <HBox styleClass="results-navbar" alignment="CENTER_LEFT" spacing="0" prefHeight="56">
+            <padding><Insets left="24" right="24"/></padding>
+
+            <!-- Left: icon + wordmark + badge -->
+            <HBox alignment="CENTER_LEFT" spacing="10" HBox.hgrow="ALWAYS">
+                <Label text="⊞" styleClass="results-nav-icon"/>
+                <Label text="CodeBricks" styleClass="results-nav-title"/>
+                <Label text="Quiz Complete ✓" styleClass="results-nav-badge"/>
+            </HBox>
+        </HBox>
+    </top>
+
+    <!-- ══ MAIN CONTENT ═════════════════════════════════════════════════════ -->
+    <center>
+        <VBox alignment="TOP_CENTER" spacing="24" styleClass="results-content-area">
+            <padding><Insets top="40" left="60" right="60" bottom="40"/></padding>
+
+            <!-- ── Page Heading ── -->
+            <VBox spacing="6">
+                <Label text="Your Results" styleClass="results-page-title"/>
+                <Label fx:id="subtitleLabel"
+                       text="Here is how you did on your quiz. Keep practicing to improve!"
+                       styleClass="results-page-subtitle"/>
+            </VBox>
+
+            <!-- ── Score Card ── -->
+            <VBox styleClass="results-card" spacing="0" maxWidth="560">
+
+                <!-- Blue top stripe -->
+                <Pane styleClass="results-card-stripe" prefHeight="5" maxWidth="Infinity"/>
+
+                <VBox spacing="16">
+                    <padding><Insets top="24" right="28" bottom="28" left="28"/></padding>
+
+                    <!-- FINAL SCORE label -->
+                    <Label text="FINAL SCORE" styleClass="results-final-label"/>
+
+                    <!-- Big score: 4 / 5 -->
+                    <HBox alignment="BOTTOM_LEFT" spacing="10">
+                        <Label fx:id="scoreLabel" text="—"   styleClass="results-score-big"/>
+                        <Label fx:id="totalLabel" text="/ 5" styleClass="results-score-denom"/>
+                    </HBox>
+
+                    <!-- Divider -->
+                    <Pane styleClass="results-divider" prefHeight="1" maxWidth="Infinity"/>
+
+                    <!-- Stats row: correct + accuracy -->
+                    <HBox spacing="56" alignment="CENTER_LEFT">
+                        <VBox spacing="2">
+                            <Label fx:id="correctLabel" text="— of —" styleClass="results-stat-value"/>
+                            <Label text="Correct Answers" styleClass="results-stat-label"/>
+                        </VBox>
+                        <VBox spacing="2">
+                            <Label fx:id="accuracyLabel" text="—%" styleClass="results-stat-value"/>
+                            <Label text="Accuracy" styleClass="results-stat-label"/>
+                        </VBox>
+                    </HBox>
+                    <!-- Pass/fail message -->
+                    <Label fx:id="resultMessageLabel"
+                           text=""
+                           styleClass="results-message"
+                           wrapText="true"/>
+
+                </VBox>
+            </VBox>
+
+            <!-- ── Buttons ── -->
+            <HBox spacing="16" alignment="center" maxWidth="560">
+                <Button
+                        text="Play Again"
+                        styleClass="results-btn-play"
+                        prefWidth="196"
+                        prefHeight="48"
+                        onAction="#handlePlayAgain"/>
+                <Button
+                        text="Back to Home"
+                        styleClass="results-btn-home"
+                        prefWidth="196"
+                        prefHeight="48"
+                        onAction="#handleHome"/>
+            </HBox>
+
+            <!-- Footer -->
+            <HBox alignment="CENTER" maxWidth="Infinity">
+                <Label
+                        text="CodeBricks  ·  Farmingdale State College  ·  CSC325"
+                        styleClass="results-footer"
+                        maxWidth="Infinity"
+                        alignment="CENTER"/>
+            </HBox>
+
+        </VBox>
+    </center>
+
+</BorderPane>
