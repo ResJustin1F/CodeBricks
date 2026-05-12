@@ -78,7 +78,7 @@ CodeBricks follows an MVC pattern - FXML views paired with Java controllers, bac
 **Performance Dashboard**  
 ![Performance Dashboard](TrainingApp/src/main/resources/images/image7.png)
 
-**Figma Hi-Fi Prototypes:** https://www.figma.com/design/V52i1hBeMC912bMGD7lmBN/Potential-Code-Brick-Figma
+**Figma Lo-Fi Prototypes:** https://www.figma.com/design/V52i1hBeMC912bMGD7lmBN/Potential-Code-Brick-Figma
 
 ---
 
