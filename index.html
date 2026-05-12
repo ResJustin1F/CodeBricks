@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CodeBricks</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background-color: #0f172a;
+      color: #f1f5f9;
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    /* FLOATING QUESTIONS */
+    #floaters {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 0;
+      overflow: hidden;
+    }
+
+    .floater {
+      position: absolute;
+      font-size: 11px;
+      font-family: 'SF Mono', 'Fira Code', monospace;
+      opacity: 0;
+      white-space: nowrap;
+      animation: drift linear infinite;
+      will-change: transform, opacity;
+    }
+
+    @keyframes drift {
+      0%   { opacity: 0;    transform: translateY(0px) translateX(0px); }
+      8%   { opacity: 1; }
+      88%  { opacity: 1; }
+      100% { opacity: 0;    transform: translateY(-120vh) translateX(var(--dx)); }
+    }
+
+    /* ---- REST OF PAGE (structure unchanged, layered above floaters) ---- */
+    header, section, footer { position: relative; z-index: 1; }
+
+    header {
+      padding: 28px 80px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    header h1 {
+      font-size: 32px;
+      font-weight: 900;
+      color: #3b82f6;
+      letter-spacing: -1px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      font-size: 14px;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-weight: 500;
+      transition: all 0.2s;
+    }
+
+    .btn-primary { background-color: #3b82f6; color: #fff; }
+    .btn-primary:hover { background-color: #2563eb; }
+
+    .btn-outline {
+      background-color: transparent;
+      color: #94a3b8;
+      border: 1px solid #334155;
+    }
+    .btn-outline:hover { color: #f1f5f9; border-color: #64748b; }
+
+    .btn-figma {
+      background-color: transparent;
+      color: #f97316;
+      border: 1px solid #f97316;
+    }
+    .btn-figma:hover { background-color: rgba(249,115,22,0.1); }
+
+    .hero {
+      text-align: center;
+      padding: 100px 80px 80px;
+    }
+
+    .badge {
+      display: inline-block;
+      background-color: rgba(59,130,246,0.12);
+      color: #3b82f6;
+      font-size: 12px;
+      font-weight: 600;
+      padding: 6px 18px;
+      border-radius: 999px;
+      margin-bottom: 28px;
+      border: 1px solid rgba(59,130,246,0.3);
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .hero h2 {
+      font-size: 68px;
+      font-weight: 900;
+      line-height: 1.05;
+      margin-bottom: 24px;
+      letter-spacing: -2px;
+    }
+
+    .hero h2 span { color: #3b82f6; }
+
+    .hero p {
+      font-size: 20px;
+      color: #64748b;
+      max-width: 620px;
+      margin: 0 auto;
+      line-height: 1.7;
+    }
+
+    .team {
+      padding: 80px 80px 60px;
+      text-align: center;
+    }
+
+    .team-label {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: #3b82f6;
+      margin-bottom: 14px;
+    }
+
+    .team h2 {
+      font-size: 32px;
+      font-weight: 800;
+      margin-bottom: 40px;
+      letter-spacing: -0.5px;
+    }
+
+    .team-grid {
+      display: flex;
+      justify-content: center;
+      flex-wrap: nowrap;
+      gap: 16px;
+    }
+
+    .member {
+      background-color: #1e293b;
+      border: 1px solid #1e3a5f;
+      border-radius: 12px;
+      padding: 22px 28px;
+      font-size: 13px;
+      color: #64748b;
+      flex: 1;
+      max-width: 220px;
+      transition: border-color 0.2s;
+    }
+
+    .member:hover { border-color: #3b82f6; }
+
+    .member span {
+      display: block;
+      font-weight: 700;
+      color: #f1f5f9;
+      font-size: 15px;
+      margin-bottom: 6px;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      padding: 40px 80px 100px;
+    }
+
+    .card {
+      background-color: #1e293b;
+      border: 1px solid #1e3a5f;
+      border-radius: 14px;
+      padding: 36px 28px;
+      transition: border-color 0.2s;
+    }
+
+    .card:hover { border-color: #3b82f6; }
+
+    .card h3 {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 10px;
+      color: #f1f5f9;
+    }
+
+    .card p {
+      font-size: 14px;
+      color: #64748b;
+      line-height: 1.7;
+    }
+
+    footer {
+      text-align: center;
+      padding: 32px;
+      font-size: 13px;
+      color: #334155;
+    }
+  </style>
+</head>
+<body>
+
+<div id="floaters"></div>
+
+<header>
+  <h1>CodeBricks</h1>
+  <div class="nav-links">
+    <a href="https://github.com/ResJustin1F/CodeBricks/blob/main/README.md" target="_blank" class="btn-outline">README</a>
+    <a href="https://github.com/ResJustin1F/CodeBricks/branches" target="_blank" class="btn-outline">Branches</a>
+    <a href="https://github.com/users/ResJustin1F/projects/1" target="_blank" class="btn-outline">Kanban Board</a>
+    <a href="https://www.figma.com/design/V52i1hBeMC912bMGD7lmBN/Potential-Code-Brick-Figma?node-id=0-1&t=Oqv6Q31RVWlob94t-1" target="_blank" class="btn-figma">Figma</a>
+    <a href="https://github.com/ResJustin1F/CodeBricks" target="_blank" class="btn-primary">GitHub Repo</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="badge">CSC325 Capstone · Spring 2026</div>
+  <h2>CodeBricks,<br><span>Master Data Structures.</span></h2>
+  <p>We are a desktop-friendly quiz application that helps problem solvers practice data structures and algorithms through interactive quizzes with real-time feedback and performance tracking.</p>
+</section>
+
+<section class="team">
+  <p class="team-label">The Team</p>
+  <h2>Meet the People Behind It</h2>
+  <div class="team-grid">
+    <div class="member"><span>Justin Restrepo</span>Lead Developer and Scrum Master</div>
+    <div class="member"><span>Jamaluddin Mohammadi</span>Backend Developer</div>
+    <div class="member"><span>Matthew Fuller</span>Backend Developer</div>
+    <div class="member"><span>Jeremy Kassim</span>UI Developer</div>
+    <div class="member"><span>Edward Sotelo</span>Frontend Developer</div>
+  </div>
+</section>
+
+<section class="features">
+  <div class="card">
+    <h3>Tech Stack</h3>
+    <p>JavaFX 21, MongoDB Atlas, BCrypt, and Maven.</p>
+  </div>
+  <div class="card">
+    <h3>User Authentication</h3>
+    <p>Secure registration and login with BCrypt hashing and MongoDB Atlas.</p>
+  </div>
+  <div class="card">
+    <h3>Quiz Levels</h3>
+    <p>Easy, Medium, or Hard with randomized questions every session.</p>
+  </div>
+  <div class="card">
+    <h3>Performance Dashboard</h3>
+    <p>Track quiz history, best scores, and accuracy across all sessions.</p>
+  </div>
+</section>
+
+<footer>
+  Farmingdale State College &middot; CSC325 Software Engineering &middot; Spring 2026
+</footer>
+
+<script>
+  const questions = [
+    { text: "What is the index of the first element in an array?", diff: "Easy" },
+    { text: "Which data structure uses contiguous memory?", diff: "Easy" },
+    { text: "What is the last index of an array of size n?", diff: "Easy" },
+    { text: "Which operation is fastest in arrays?", diff: "Easy" },
+    { text: "Binary search tree property?", diff: "Medium" },
+    { text: "Worst case search in skewed BST?", diff: "Medium" },
+    { text: "Which traversal uses a queue?", diff: "Medium" },
+    { text: "Full binary tree means?", diff: "Medium" },
+    { text: "Worst-case time complexity of searching in an unsorted array?", diff: "Hard" },
+    { text: "Space complexity of an in-place array algorithm?", diff: "Hard" },
+    { text: "Worst-case time for inserting at beginning of array?", diff: "Hard" },
+    { text: "Which algorithm is best for finding max subarray sum?", diff: "Hard" },
+  ];
+
+  const colors = {
+    Easy:   "rgba(59, 130, 246, VAR)",
+    Medium: "rgba(249, 115, 22, VAR)",
+    Hard:   "rgba(168, 85, 247, VAR)",
+  };
+
+  const container = document.getElementById("floaters");
+  const COUNT = 18;
+
+  function spawnFloater() {
+    const q = questions[Math.floor(Math.random() * questions.length)];
+    const el = document.createElement("div");
+    el.className = "floater";
+
+    const opacity = (Math.random() * 0.12 + 0.06).toFixed(2);
+    const left = Math.random() * 95;
+    const startY = 105 + Math.random() * 30;
+    const duration = 18 + Math.random() * 22;
+    const delay = Math.random() * duration;
+    const dx = (Math.random() - 0.5) * 120;
+
+    el.style.left = left + "vw";
+    el.style.top = startY + "vh";
+    el.style.setProperty("--dx", dx + "px");
+    el.style.animationDuration = duration + "s";
+    el.style.animationDelay = "-" + delay + "s";
+    el.style.fontSize = (10 + Math.random() * 3).toFixed(1) + "px";
+    el.style.color = colors[q.diff].replace("VAR", opacity);
+
+    const prefix = q.diff === "Hard" ? "// " : q.diff === "Medium" ? "/* " : "";
+    const suffix = q.diff === "Medium" ? " */" : "";
+    el.textContent = prefix + q.text + suffix;
+
+    container.appendChild(el);
+
+    setTimeout(() => {
+      if (el.parentNode) el.parentNode.removeChild(el);
+      spawnFloater();
+    }, (duration + 1) * 1000);
+  }
+
+  for (let i = 0; i < COUNT; i++) {
+    setTimeout(spawnFloater, i * 300);
+  }
+</script>
+</body>
+</html>
