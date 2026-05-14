@@ -120,7 +120,7 @@ Developed across 3 sprints using Agile/Scrum with a GitHub Kanban board, weekly 
 **Sprint 1 - LoFi Prototypes and Project Proposal**
 - Defined requirements (IEEE SRS), created LoFi wireframes, created Figma protoype, and set up repo and branch strategy
 
-**Sprint 2 - Frontend with No Logic**
+**Sprint 2 - Frontend, UI Development Phase **
 - Built all 8 FXML screens, global stylesheet, and navigation pattern
 
 **Sprint 3 - Backend Integration and Version 1.0 Release**
