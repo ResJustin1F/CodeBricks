@@ -150,9 +150,9 @@ To run all tests:
 ``` mvn test ```
 
 Test classes:
-- `AuthServiceTest` - BCrypt password hashing logic
-- `QuizServiceTest` — Question loading and difficulty filtering
-- `SessionManagerTest` — Session set, get, and clear behavior
+- `AuthServiceTest` : BCrypt password hashing logic
+- `QuizServiceTest` : Question loading and difficulty filtering
+- `SessionManagerTest`: Session set, get, and clear behavior
 
 ---
 
