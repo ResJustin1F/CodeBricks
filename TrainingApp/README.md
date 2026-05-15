@@ -28,7 +28,7 @@ CodeBricks is a desktop quiz application that helps computer science students pr
 
 ## Tech Stack
 
-- JavaFX 
+- JavaFX
 - Java
 - Maven
 - MongoDB Atlas
@@ -85,9 +85,9 @@ CodeBricks follows an MVC pattern - FXML views paired with Java controllers, bac
 ## How to Run
 
 **Prerequisites**
-- Java 
+- Java
 - Maven
-- IntelliJ IDEA 
+- IntelliJ IDEA
 
 ```bash
 git clone https://github.com/ResJustin1F/CodeBricks.git
