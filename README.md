@@ -140,6 +140,20 @@ Developed across 3 sprints using Agile/Scrum with a GitHub Kanban board, weekly 
 - Branch protection - dev requires one approving review before merge
 - Manual testing via `mvn javafx:run`, IntelliJ debugger, and console print statements
 
+
+## Running Tests
+
+The project includes JUnit 5 tests for core service classes.
+
+To run all tests:
+
+``` mvn test ```
+
+Test classes:
+- `AuthServiceTest` - BCrypt password hashing logic
+- `QuizServiceTest` — Question loading and difficulty filtering
+- `SessionManagerTest` — Session set, get, and clear behavior
+
 ---
 
 ## Team Roles
